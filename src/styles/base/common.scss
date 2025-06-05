@@ -1,0 +1,41 @@
+body {
+    background-color: var(--neutralColors_800);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+img {
+    display: block;
+}
+
+.container-fluid.h-100 {
+    min-height: 100vh;
+    height: 100vh !important;
+
+    @media screen and (max-width: 1000px) {
+        height: auto !important;
+    }
+}
+
+.ms-0 {
+    margin-inline-start: 0px !important;
+}
+
+.ms-auto {
+    margin-inline-start: auto !important;
+}
+
+@media (min-width: 768px) {
+    .ms-md-auto {
+        margin-inline-start: auto !important;
+    }
+}
+
+.special-block {
+    max-width: 100%;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 10px;
+}

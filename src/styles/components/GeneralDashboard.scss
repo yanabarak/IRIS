@@ -1,0 +1,32 @@
+.main-block-general {
+    background-color: var(--secondaryColorsColor_1);
+    border-radius: 12px;
+
+    h6 {
+        color: var(--secondaryColorsColor_5)
+    }
+
+    .icons-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 36px;
+        height: 36px;
+        background-color: var(--neutralColors_800);
+        border-radius:
+            6px;
+        color: var(--e-global-color-secondar);
+    }
+
+    .block-type.borders {
+        border: 1px solid var(--secondaryColorsColor_4);
+        border-radius: 6px;
+    }
+}
+
+@media screen and (min-width: 700px) {
+    .map-events {
+        overflow: auto;
+        max-height: calc(100vh - 30px);
+    }
+}

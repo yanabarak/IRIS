@@ -1,0 +1,60 @@
+.btn {
+    padding: 0.25rem 0.75rem;
+    min-height: 35px;
+
+    @media (max-width: 768px) {
+        min-height: 38px;
+    }
+
+    &:focus {
+        box-shadow: none !important;
+    }
+}
+
+.badge {
+    &.badge-outline.badge-pill {
+        color: var(--e-global-color-accent);
+        border: 1px solid;
+        font-weight: normal;
+    }
+
+    &.badge-outline-danger {
+        color: var(--danger);
+        border: 1px solid;
+        font-weight: normal;
+    }
+}
+
+.positioned-button {
+    position: absolute;
+    margin-top: -28px !important;
+    right: 2px;
+    background-color: #fff;
+}
+
+.badge.position-absolute.badge-primary.badge-pill {
+    top: -8px;
+    right: -8px;
+    width: 18px;
+    height: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: normal;
+}
+
+.toast {
+    button.close {
+        color: transparent;
+        background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-x' viewBox='0 0 16 16'%3e%3cpath d='M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708'/%3e%3c/svg%3e");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 30px;
+        font-size: 0px;
+        transition: all 300ms linear;
+        display: block;
+        width: 20px;
+        height: 20px;
+
+    }
+}
