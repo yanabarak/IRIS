@@ -22,17 +22,16 @@
       </div>
       <div>
         <ul class="neutral-color pt-0">
-          <li class="pl-2 d-block d-md-flex justify-content-between">
+          <li class="mb-2 pl-2">
             <div>
               <span class="font-weight-bold main-color">UserControl</span> - Blocks unsafe sites
             </div>
-            <span class="flex-grow-1 divider"></span>
-            <span class="fs-12 font-italic"> # (In Development, v1.9, Q3 2025)</span>
+            <span class="fs-10 color-500 font-italic"> # (In Development, v1.9, Q3 2025)</span>
           </li>
-          <li class="pl-2 d-block d-md-flex justify-content-between">
+          <li class="mb-2 pl-2">
             <div><span class="font-weight-bold main-color">NoteMaster</span> - Webpage notes</div>
-            <span class="flex-grow-1 divider"></span>
-            <span class="fs-12 font-italic"> # (In Development, v1.0.1, Q3 2025)</span>
+
+            <span class="fs-10 color-500 font-italic"> # (In Development, v1.0.1, Q3 2025)</span>
           </li>
         </ul>
       </div>
@@ -46,10 +45,10 @@
       </div>
       <div>
         <ul class="neutral-color pt-0">
-          <li class="pl-2 d-block d-md-flex justify-content-between">
+          <li class="mb-2 pl-2">
             <div><span class="font-weight-bold main-color">DocA</span> - AI document analysis</div>
-            <span class="flex-grow-1 divider"></span>
-            <span class="fs-12 font-italic"> # (In Development, v0.1, Q3 2025)</span>
+
+            <span class="fs-10 color-500 font-italic"> # (In Development, v0.1, Q3 2025)</span>
           </li>
         </ul>
       </div>
@@ -63,13 +62,13 @@
       </div>
       <div>
         <ul class="neutral-color pt-0">
-          <li class="pl-2 d-block d-md-flex justify-content-between">
+          <li class="mb-2 pl-2">
             <div>
               <span class="font-weight-bold main-color">ChordMaster</span> - Guitar chord
               visualization
             </div>
-            <span class="flex-grow-1 divider"></span>
-            <span class="fs-12 font-italic"> # (In Development, v0.1, Q3 2025)</span>
+
+            <span class="fs-10 color-500 font-italic"> # (In Development, v0.1, Q3 2025)</span>
           </li>
         </ul>
       </div>

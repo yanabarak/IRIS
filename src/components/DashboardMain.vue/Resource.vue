@@ -112,7 +112,7 @@
         </div>
         <div>
           <ul class="neutral-color pt-0">
-            <li class="pl-2 d-block d-md-flex justify-content-between">Free domains/li></li>
+            <li class="pl-2 d-block d-md-flex justify-content-between">Free domains</li>
           </ul>
         </div>
       </div>

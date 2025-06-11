@@ -77,7 +77,7 @@ export default {
           element.style.order = '';
         });
         element.style.order = '-1';
-        // element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        element.closest('.d-flex').scrollTop = 0;
         element.classList.add('highlight');
         setTimeout(() => {
           element.classList.remove('highlight');

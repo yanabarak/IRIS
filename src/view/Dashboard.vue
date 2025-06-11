@@ -4,20 +4,19 @@
     <div class="flex-grow-1 special-block">
       <div class="d-flex flex-column flex-md-row">
         <div class="map-events d-flex flex-column flex-grow-1 align-self-start gap-2">
-          <ProjectsGeneral />
           <CompanyGuidelines />
           <Resource />
           <EngineeringAssets />
           <RD />
           <BusinessResearch />
         </div>
+        <ProjectsSidebar />
         <FixedBlock class="flex-shrink-0" />
       </div>
     </div>
   </div>
 </template>
 <script>
-import ProjectsGeneral from '@/components/DashboardMain.vue/ProjectsGeneral.vue';
 import CompanyGuidelines from '@/components/DashboardMain.vue/CompanyGuidelines.vue';
 import Resource from '@/components/DashboardMain.vue/Resource.vue';
 import EngineeringAssets from '@/components/DashboardMain.vue/EngineeringAssets.vue';
@@ -27,23 +26,23 @@ import BusinessResearch from '@/components/DashboardMain.vue/BusinessResearch.vu
 import FixedBlock from '@/components/FixedBlock.vue';
 import SideBar from '@/components/SideBar.vue';
 import { mapState } from 'vuex';
+import ProjectsSidebar from '@/components/DashboardMain.vue/ProjectsSidebar.vue';
 
 export default {
   components: {
     SideBar,
-    ProjectsGeneral,
     FixedBlock,
     CompanyGuidelines,
     Resource,
     EngineeringAssets,
     RD,
     BusinessResearch,
+    ProjectsSidebar,
   },
   data() {
     return {
       isExpandedLocal: this.expanded,
       links: [
-        { id: 'projects-general', text: 'Projects', icon: 'kanban' },
         { id: 'company-guidelines', text: 'Company Guidelines', icon: 'book' },
         { id: 'resource', text: 'Resource', icon: 'box-seam' },
         { id: 'engineering-assets', text: 'Engineering Assets', icon: 'gear-wide-connected' },
