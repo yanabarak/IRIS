@@ -371,13 +371,24 @@
 
 .main-block-general {
     transition: all 300ms linear;
-    .blue-bg{
-      border-radius: 8px;
-      background-color: var(--secondaryColorsColor_1);
-      padding: 10px;
-      margin-bottom: 16px
+
+    .blue-bg {
+        border-radius: 8px;
+        background-color: var(--secondaryColorsColor_1);
+        padding: 10px;
+        margin-bottom: 16px
     }
 }
+
 .highlight {
     box-shadow: 0 0px 5px 0px var(--e-global-color-secondar) inset !important;
+}
+
+@media (max-width: 768px) {
+
+    .special-block .b-sidebar,
+    .special-block .custom-sidebar.b-sidebar-outer {
+        height: fit-content;
+        min-height: auto;
+    }
 }
