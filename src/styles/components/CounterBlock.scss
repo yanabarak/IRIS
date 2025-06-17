@@ -1,0 +1,30 @@
+.counter-block {
+    display: flex !important;
+    flex-direction: column;
+    background-color: transparent !important;
+    color: #343434;
+    width: fit-content;
+    max-width: 500px;
+    overflow: hidden;
+    padding: 15px 5px;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    transition: 0.2s ease-in-out;
+    z-index: 1;
+  
+    &:after {
+      background-color: #ffffff5c !important;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .grid-sm {
+      display: grid !important;
+      grid-template-columns: 1fr 1fr;
+    }
+  
+    .counter-block {
+      width: 100%;
+    }
+  }

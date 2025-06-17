@@ -1,0 +1,92 @@
+body {
+    --bs-body-font-family:
+        'Montserrat',
+        'Open Sans',
+        system-ui,
+        -apple-system,
+        "Segoe UI",
+        Roboto,
+        "Helvetica Neue",
+        "Noto Sans",
+        "Liberation Sans",
+        Arial,
+        sans-serif;
+    --e-global-color-text: var(--neutralColors_400);
+    --bs-body-font-size: 13px;
+    font-family: var(--bs-body-font-family);
+    font-size: var(--bs-body-font-size);
+
+
+    --e-global-color-primary: hsl(259, 100%, 66%);
+    --e-global-color-accent: rgb(137, 81, 255);
+    --e-global-color-secondar: rgb(33, 195, 252);
+    --e-global-color-tert: rgb(14, 67, 251);
+    --neutralColors_800: rgb(8, 16, 40);
+    --neutralColors_700: rgb(10, 19, 48);
+    --neutralColors_600: rgb(11, 23, 57);
+    --neutralColors_500: rgb(126, 137, 172);
+    --neutralColors_400: rgb(174, 185, 225);
+    --neutralColors_300: rgb(209, 219, 249);
+    --neutralColors_200: rgb(217, 225, 250);
+    --neutralColors_100: rgb(255, 255, 255);
+    --primaryColorsColor_1: rgb(203, 60, 255);
+    --secondaryColorsColor_1: rgb(11, 23, 57);
+    --secondaryColorsColor_4: rgb(52, 59, 79);
+    --secondaryColorsColor_5: rgb(253, 181, 42);
+    --red: #ff0078;
+
+
+    @media (max-width: 768px) {
+        font-size: 16px !important;
+    }
+
+    color: var(--neutralColors_400);
+}
+
+.popover-body {
+    font-family: var(--bs-body-font-family);
+    font-size: 12px;
+}
+
+h6,
+.h6,
+h5,
+.h5,
+h4,
+.h4,
+h3,
+.h3,
+h2,
+.h2,
+h1,
+.h1 {
+    color: var(--e-global-color-accent);
+}
+
+.main-color {
+    color: var(--e-global-color-primary);
+}
+
+.sec-color {
+    color: var(--e-global-color-secondar)
+}
+
+.thr-color {
+    color: var(--e-global-color-tert)
+}
+
+.four-color {
+    color: var(--primaryColorsColor_1)
+}
+
+.five-color {
+    color: var(--secondaryColorsColor_5)
+}
+
+.neutral-color {
+    color: var(--neutralColors_400);
+}
+
+.color-500 {
+    color: var(--neutralColors_500);
+}

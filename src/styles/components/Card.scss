@@ -1,0 +1,135 @@
+.card {
+    box-shadow: inset 0 0px 0 0 var(--e-global-color-primary), inset 0 0px 0 0 rgb(237, 230, 241) !important;
+    --bs-card-spacer-y: 1rem;
+    --bs-card-spacer-x: 1rem;
+    --bs-card-title-spacer-y: 0.5rem;
+    --bs-card-border-width: 0px;
+    --bs-card-border-color: rgba(0, 0, 0, .125);
+    --bs-card-border-radius: 1rem;
+    --bs-card-box-shadow: 0 0 2rem 0 rgba(136, 152, 170, .15);
+    --bs-card-inner-border-radius: 1rem;
+    --bs-card-cap-padding-y: 0.5rem;
+    --bs-card-cap-padding-x: 1rem;
+    --bs-card-cap-bg: #fff;
+    --bs-card-bg: #fff;
+    --bs-card-img-overlay-padding: 1rem;
+    --bs-card-group-margin: 0.75rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    height: var(--bs-card-height);
+    color: var(--bs-body-color);
+    word-wrap: break-word;
+    background-color: var(--bs-card-bg);
+    background-clip: border-box;
+    border: var(--bs-card-border-width) solid rgba(0, 0, 0, 0.125);
+    border-radius: var(--bs-card-border-radius);
+    position: relative;
+    transition: all 300ms linear;
+
+    &.request-card {
+        filter: drop-shadow(0px 0px 2px rgba(0, 0, 0, 0.125));
+        --bs-card-border-width: 1px;
+
+        .collapse .card-body {
+            border-top: 1px solid rgba(0, 0, 0, 0.125);
+        }
+
+        .btn.rounded-collapse.btn-secondary {
+            background-color: transparent;
+            color: var(--e-global-color-accent);
+            border: 0px;
+            padding: 0px;
+
+            &:active,
+            &:focus {
+                box-shadow: none !important;
+            }
+        }
+
+        .card-body,
+        .card-header,
+        .card-footer {
+            padding-left: 0.75rem;
+            padding-right: 0.75rem;
+        }
+    }
+
+    .card-header {
+        box-shadow: none;
+        border-top-left-radius: var(--bs-card-border-radius) !important;
+        border-top-right-radius: var(--bs-card-border-radius) !important;
+        background-color: transparent;
+    }
+
+    .card-footer {
+        box-shadow: none;
+        border-bottom-left-radius: var(--bs-card-border-radius) !important;
+        border-bottom-right-radius: var(--bs-card-border-radius) !important;
+        background-color: transparent;
+    }
+
+    &.clicked-parent {
+        box-shadow: inset 0 -5px 0 0 var(--e-global-color-primary), inset 0 -300px 0 0 #fff !important;
+    }
+
+    .rounded.rounded-favourite.ms-auto {
+        border-radius: 100px !important;
+        width: 46px;
+        height: 46px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        right: -15px;
+        top: -15px;
+        background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg viewBox='0 0 16 16' width='1em' height='1em' focusable='false' role='img' aria-label='star fill' xmlns='http://www.w3.org/2000/svg' fill='%23fff' class='bi-star-fill icon-style b-icon bi'%3e%3cg%3e%3cpath d='M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z'%3e%3c/path%3e%3c/g%3e%3c/svg%3e");
+        background-size: 46px;
+        background-repeat: no-repeat;
+        background-position: left bottom;
+        cursor: pointer;
+    }
+
+    &.request-card.urgent {
+        border: 1px solid var(--success);
+        --e-global-color-primary: var(--success);
+        --e-global-color-accent: var(--success);
+
+        .animated-button {
+            &:hover {
+                color: #fff;
+                background-color: rgb(32.6086956522, 136.1413043478, 56.25);
+                border-color: rgb(30.1449275362, 125.8550724638, 52);
+            }
+
+            &:focus,
+            &.focus {
+                color: #fff;
+                background-color: rgb(32.6086956522, 136.1413043478, 56.25);
+                border-color: rgb(30.1449275362, 125.8550724638, 52);
+                box-shadow: 0 0 0 0.2rem rgba(72.25, 180.2, 96.9, 0.5);
+            }
+
+        }
+
+        h5,
+        .btn-link {
+            color: var(--success);
+        }
+    }
+
+    .icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-inline-end: 10px;
+        width: 40px;
+        height: 40px;
+        border-radius: 100px;
+        border: 1px solid;
+        background: color-mix(in srgb, currentColor 10%, transparent);
+        flex-shrink: 0;
+    }
+
+}

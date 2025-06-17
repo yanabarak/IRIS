@@ -1,0 +1,34 @@
+@use "sass:meta";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+@include meta.load-css('base/var.scss');
+@include meta.load-css('base/fs.scss');
+@include meta.load-css('base/common.scss');
+// @include meta.load-css('base/additional.scss');
+
+@include meta.load-css('custom.scss');
+
+@include meta.load-css('components/Inputs.scss');
+@include meta.load-css('components/vSelect.scss');
+@include meta.load-css('components/Progress.scss');
+@include meta.load-css('components/Modal.scss');
+@include meta.load-css('components/Buttons.scss');
+@include meta.load-css('components/SideBar.scss');
+@include meta.load-css('components/Header.scss');
+@include meta.load-css('components/Card.scss');
+@include meta.load-css('components/Table.scss');
+// @include meta.load-css('components/CounterBlock.scss');
+@include meta.load-css('components/SideList.scss');
+// @include meta.load-css('components/ChatDesign.scss');
+// @include meta.load-css('components/Map.scss');
+@include meta.load-css('components/QuickAcess.scss');
+@include meta.load-css('components/GeneralDashboard.scss');
+
+
+@include meta.load-css('view/personalDetails.scss');
+// @include meta.load-css('view/auth.scss');
+// @include meta.load-css('view/helpRequest.scss');
+@include meta.load-css('view/dashboard.scss');
+
+
+// @include meta.load-css('multilang.scss');

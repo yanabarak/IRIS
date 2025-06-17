@@ -1,0 +1,122 @@
+.vue-tel-input {
+    background-color: #fff;
+    border: 1px solid #ced4da;
+    min-height: 35.2px;
+    border-radius: 0.25rem;
+
+    &:focus-within {
+        border-color: rgb(171.3387096774, 71.5322580645, 210.9677419355);
+        outline: 0;
+        box-shadow: 0 0 0 0.2rem rgba(98, 30, 125, 0.25);
+    }
+}
+
+.wrong-number+.vue-tel-input {
+    border-color: #dc3545;
+    padding-right: calc(1.5em + 0.75rem) !important;
+    background-image: url("data:image/svg+xml,%3csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%2712%27 height=%2712%27 fill=%27none%27 stroke=%27%23dc3545%27 viewBox=%270 0 12 12%27%3e%3ccircle cx=%276%27 cy=%276%27 r=%274.5%27/%3e%3cpath stroke-linejoin=%27round%27 d=%27M5.8 3.6h.4L6 6.5z%27/%3e%3ccircle cx=%276%27 cy=%278.2%27 r=%27.6%27 fill=%27%23dc3545%27 stroke=%27none%27/%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right calc(0.375em + 0.1875rem) center;
+    background-size: calc(0.75em + 0.375rem) calc(0.75em + 0.375rem);
+}
+
+.correct+.vue-tel-input {
+    border-color: #28a745;
+    padding-right: calc(1.5em + 0.75rem) !important;
+    background-image: url("data:image/svg+xml,%3csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%278%27 height=%278%27 viewBox=%270 0 8 8%27%3e%3cpath fill=%27%2328a745%27 d=%27M2.3 6.73L.6 4.53c-.4-1.04.46-1.4 1.1-.8l1.1 1.4 3.4-3.8c.6-.63 1.6-.27 1.2.7l-4 4.6c-.43.5-.8.4-1.1.1z%27/%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right calc(0.375em + 0.1875rem) center;
+    background-size: calc(0.75em + 0.375rem) calc(0.75em + 0.375rem);
+}
+
+.vti__dropdown {
+    &:focus-within {
+        border-color: rgb(171.3387096774, 71.5322580645, 210.9677419355);
+        outline: 0;
+        box-shadow: 0 0 0 0.2rem rgba(98, 30, 125, 0.25);
+    }
+}
+
+.custom-control-label {
+    display: flex;
+    align-items: center;
+}
+
+input.text-code.form-control {
+    text-align: center;
+    min-height: 60px;
+    font-size: 40px;
+    padding: 0px !important;
+    background-image: none !important;
+}
+
+.vdatetime-calendar__month__weekday {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 150%;
+    color: var(--e-global-color-text);
+}
+
+.vdatetime-calendar__month__day {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    color: var(--e-global-color-text);
+
+    @media (max-width: 768px) {
+        font-size: 16px;
+    }
+}
+
+.vdatetime-calendar__month__day--selected>span>span,
+.vdatetime-calendar__month__day--selected:hover>span>span {
+    background-color: var(--e-global-color-primary);
+}
+
+.vdatetime-popup__actions__button.vdatetime-popup__actions__button--cancel {
+    background: #F0F0F0;
+    border-radius: 2px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 150%;
+    color: var(--e-global-color-text);
+    flex-grow: 1;
+    text-align: center;
+
+    @media (max-width: 768px) {
+        font-size: 16px;
+    }
+}
+
+.vdatetime-popup__actions__button.vdatetime-popup__actions__button--confirm {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 150%;
+    color: #FFFFFF;
+    background: var(--e-global-color-primary);
+    border-radius: 2px;
+    flex-grow: 1;
+    text-align: center;
+
+    @media (max-width: 768px) {
+        font-size: 16px;
+    }
+}
+
+.vdatetime-popup__actions {
+    display: flex;
+    gap: 12px;
+    padding: 0 30px 10px 30px;
+}
+
+.vdatetime-popup__header,
+.vdatetime-calendar__month__day--selected>span>span,
+.vdatetime-calendar__month__day--selected:hover>span>span {
+    background: var(--e-global-color-primary);
+}
+
+.vdatetime-year-picker__item--selected,
+.vdatetime-time-picker__item--selected,
+.vdatetime-popup__actions__button {
+    color: var(--e-global-color-primary);
+}

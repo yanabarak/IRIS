@@ -1,0 +1,18 @@
+.progress.disabled * {
+    background-color: #986caa !important;
+    color: transparent !important;
+}
+
+.progress.disabled {
+    background-color: #986caa !important;
+}
+
+.progress.active * {
+    background-color: var(--e-global-color-primary) !important;
+    color: transparent !important;
+}
+
+.progress.active {
+    background-color: var(--e-global-color-primary) !important;
+
+}
