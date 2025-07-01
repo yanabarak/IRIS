@@ -15,16 +15,31 @@ import Dashboard from '@/view/Dashboard.vue';
 import NotFound from '@/components/NotFound.vue';
 
 // Company Guidelines
-import product from '@/view/Company_Guidelines/Product_Development/product.vue';
+import Product from '@/view/Company_Guidelines/Product_Development/Product.vue';
+import Version_Naming from '@/view/Company_Guidelines/Versioning/Version_Naming.vue';
+import Browser_Extension from '@/view/Company_Guidelines/Documentation_Guidlines/Browser_Extension.vue';
+import Web_Application from '@/view/Company_Guidelines/Documentation_Guidlines/Web_Application.vue';
+import Expansion from '@/view/Company_Guidelines/Documentation_Guidlines/Expansion.vue';
 
 // Resource
 import JavaScript from '@/view/Resource/Languages/JavaScript.vue';
 import Python from '@/view/Resource/Languages/Python.vue';
+import Groq from '@/view/Resource/AI/Groq.vue';
+import List_Server from '@/view/Resource/Servers/List_Server.vue';
+import Firebase from '@/view/Resource/Servers/Firebase.vue';
+import Cloud_Run from '@/view/Resource/Servers/Cloud_Run.vue';
+import Free_Domains from '@/view/Resource/Domains/Free_Domains.vue';
+
+// Engineering Assets
+import Browser_Extensions from '@/view/Engineering_Assets/Browser_Extensions.vue';
+
+// R&D
+import Magnetometer from '@/view/R&D/Magnetometer.vue';
 
 // Projects
-import UserControl from '@/view/Projects/Browser_Extensions /UserControl.vue';
+// import UserControl from '@/view/Projects/Browser_Extensions/UserControl.vue';
 
-Vue.use(VueRouter);
+Vue.use(VueRouter); 
 
 const routes = [
   // { path: '/personal-details', component: PersonalDetails },
@@ -43,10 +58,31 @@ const routes = [
     name: 'Dashboard',
     component: Dashboard,
   },
+  // Company Guidelines
   {
-    path: '/product',
-    name: 'product',
-    component: product,
+    path: '/Product',
+    name: 'Product',
+    component: Product,
+  },
+  {
+    path: '/Version_Naming',
+    name: 'Version_Naming',
+    component: Version_Naming,
+  },
+  {
+    path: '/Browser_Extension',
+    name: 'Browser_Extension',
+    component: Browser_Extension,
+  },
+  {
+    path: '/Web_Application',
+    name: 'Web_Application',
+    component: Web_Application,
+  },
+  {
+    path: '/Expansion',
+    name: 'Expansion',
+    component: Expansion,
   },
   {
     path: '/JavaScript',
@@ -58,6 +94,46 @@ const routes = [
     name: 'Python',
     component: Python,
   },
+  // Resource
+  {
+    path: '/Groq',
+    name: 'Groq',
+    component: Groq,
+  },
+  {
+    path: '/List_Server',
+    name: 'List_Server',
+    component: List_Server,
+  },
+  {
+    path: '/Firebase',
+    name: 'Firebase',
+    component: Firebase,
+  },
+  {
+    path: '/Cloud_Run',
+    name: 'Cloud_Run',
+    component: Cloud_Run,
+  },
+  {
+    path: '/Free_Domains',
+    name: 'Free_Domains',
+    component: Free_Domains,
+  },
+  // Engineering Assets
+  {
+    path: '/Browser_Extensions',
+    name: 'Browser_Extensions',
+    component: Browser_Extensions,
+  },
+  // R&D
+  {
+    path: '/Magnetometer',
+    name: 'Magnetometer',
+    component: Magnetometer,
+  },
+
+
 
   // {
   //   path: '/UserControl',

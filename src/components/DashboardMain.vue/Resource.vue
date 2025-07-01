@@ -66,15 +66,9 @@
         </div>
         <div>
           <ul class="neutral-color pt-0">
-            <li class="pl-2 d-block d-md-flex justify-content-between">
-              List of free hosting with PHP, Node.js or Python
-            </li>
-            <li class="pl-2 d-block d-md-flex justify-content-between">
-              Firebase (Authentication, Firestore)
-            </li>
-            <li class="pl-2 d-block d-md-flex justify-content-between">
-              Cloud Run (Containerized Apps)
-            </li>
+            <li class="pl-2 d-block d-md-flex justify-content-between"><router-link to="List_Server">List of free hosting with PHP, Node.js or Python</router-link></li>
+            <li class="pl-2 d-block d-md-flex justify-content-between"><router-link to="Firebase">Firebase (Authentication, Firestore)</router-link></li>
+            <li class="pl-2 d-block d-md-flex justify-content-between"><router-link to="Cloud_Run">Cloud Run (Containerized Apps)</router-link></li>
           </ul>
         </div>
       </div>
@@ -87,7 +81,7 @@
         </div>
         <div>
           <ul class="neutral-color pt-0">
-            <li class="pl-2 d-block d-md-flex justify-content-between">Groq</li>
+            <li class="pl-2 d-block d-md-flex justify-content-between"><router-link to="Groq">Groq</router-link></li>
             <li class="pl-2 d-block d-md-flex justify-content-between">Grok</li>
           </ul>
         </div>
@@ -112,7 +106,7 @@
         </div>
         <div>
           <ul class="neutral-color pt-0">
-            <li class="pl-2 d-block d-md-flex justify-content-between">Free domains</li>
+            <li class="pl-2 d-block d-md-flex justify-content-between"><router-link to="Free_Domains">Free domains</router-link></li>
           </ul>
         </div>
       </div>

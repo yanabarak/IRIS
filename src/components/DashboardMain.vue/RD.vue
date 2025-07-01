@@ -11,15 +11,8 @@
         </div>
         <div>
           <ul class="neutral-color pt-0">
-            <li class="pl-2 d-block">
-              Sensors
-
-              <ul class="neutral-color pt-0">
-                <li class="pl-2 d-block d-md-flex justify-content-between">
-                  Magnetometer <span class="flex-grow-1 divider"></span
-                  ><span class="fs-12 font-italic"> # (In Research)</span>
-                </li>
-              </ul>
+            <li class="pl-2 d-block d-md-flex justify-content-between">
+              <router-link to="Magnetometer">Magnetometer</router-link> <span class="flex-grow-1 divider"></span><span class="fs-12 font-italic"> # (In Research)</span>
             </li>
           </ul>
         </div>

@@ -2,9 +2,7 @@
   <div class="engineering-assets main-block-general col-12 p-3" id="engineering-assets">
     <h6>Engineering Assets</h6>
     <div class="row m-0 gap-2">
-      <div class="block-type col-12 col-md borders p-2 text-center d-flex align-items-center justify-content-center">
-        Browser Extensions
-      </div>
+      <div class="block-type col-12 col-md borders p-2 text-center d-flex align-items-center justify-content-center"><router-link to="Browser_Extensions">Browser Extensions</router-link></div>
       <div class="block-type col-12 col-md borders p-2 text-center d-flex align-items-center justify-content-center">
         UI Components
       </div>
