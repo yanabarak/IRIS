@@ -14,6 +14,9 @@
             <li class="pl-2 d-block d-md-flex justify-content-between">Team Credentials</li>
             <li class="pl-2 d-block d-md-flex justify-content-between">Mails Logins</li>
             <li class="pl-2 d-block d-md-flex justify-content-between">Server Logins</li>
+            <li class="pl-2 d-block d-md-flex justify-content-between">
+              <router-link to="/MarkdownUploader">LOADER MD</router-link>
+            </li>
           </ul>
         </div>
       </div>
@@ -52,8 +55,12 @@
         </div>
         <div>
           <ul class="neutral-color pt-0">
-            <li class="pl-2 d-block d-md-flex justify-content-between"><router-link to="JavaScript">JavaScript (ES6+)</router-link></li>
-            <li class="pl-2 d-block d-md-flex justify-content-between"><router-link to="Python">Python (3.x)</router-link></li>
+            <li class="pl-2 d-block d-md-flex justify-content-between">
+              <router-link to="JavaScript">JavaScript (ES6+)</router-link>
+            </li>
+            <li class="pl-2 d-block d-md-flex justify-content-between">
+              <router-link to="Python">Python (3.x)</router-link>
+            </li>
           </ul>
         </div>
       </div>
@@ -66,9 +73,17 @@
         </div>
         <div>
           <ul class="neutral-color pt-0">
-            <li class="pl-2 d-block d-md-flex justify-content-between"><router-link to="List_Server">List of free hosting with PHP, Node.js or Python</router-link></li>
-            <li class="pl-2 d-block d-md-flex justify-content-between"><router-link to="Firebase">Firebase (Authentication, Firestore)</router-link></li>
-            <li class="pl-2 d-block d-md-flex justify-content-between"><router-link to="Cloud_Run">Cloud Run (Containerized Apps)</router-link></li>
+            <li class="pl-2 d-block d-md-flex justify-content-between">
+              <router-link to="List_Server"
+                >List of free hosting with PHP, Node.js or Python</router-link
+              >
+            </li>
+            <li class="pl-2 d-block d-md-flex justify-content-between">
+              <router-link to="Firebase">Firebase (Authentication, Firestore)</router-link>
+            </li>
+            <li class="pl-2 d-block d-md-flex justify-content-between">
+              <router-link to="Cloud_Run">Cloud Run (Containerized Apps)</router-link>
+            </li>
           </ul>
         </div>
       </div>
@@ -81,7 +96,9 @@
         </div>
         <div>
           <ul class="neutral-color pt-0">
-            <li class="pl-2 d-block d-md-flex justify-content-between"><router-link to="Groq">Groq</router-link></li>
+            <li class="pl-2 d-block d-md-flex justify-content-between">
+              <router-link to="Groq">Groq</router-link>
+            </li>
             <li class="pl-2 d-block d-md-flex justify-content-between">Grok</li>
           </ul>
         </div>
@@ -106,7 +123,9 @@
         </div>
         <div>
           <ul class="neutral-color pt-0">
-            <li class="pl-2 d-block d-md-flex justify-content-between"><router-link to="Free_Domains">Free domains</router-link></li>
+            <li class="pl-2 d-block d-md-flex justify-content-between">
+              <router-link to="Free_Domains">Free domains</router-link>
+            </li>
           </ul>
         </div>
       </div>

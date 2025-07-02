@@ -2,6 +2,7 @@
     padding-top: 0px;
     overflow-x: visible;
     padding-left: 15px;
+
 }
 
 .classic_block {
@@ -17,8 +18,16 @@
     ul {
         list-style: none;
         padding-left: 0px;
-        color: var(--e-global-color-secondar);
+        // color: var(--e-global-color-secondar);
         margin-bottom: 0px;
+
+        a {
+            color: var(--e-global-color-secondar);
+
+            &:hover {
+                color: rgb(255, 0, 120);
+            }
+        }
     }
 
 

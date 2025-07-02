@@ -21,6 +21,8 @@ import Browser_Extension from '@/view/Company_Guidelines/Documentation_Guidlines
 import Web_Application from '@/view/Company_Guidelines/Documentation_Guidlines/Web_Application.vue';
 import Expansion from '@/view/Company_Guidelines/Documentation_Guidlines/Expansion.vue';
 
+import MarkdownUploader from '@/components/MarkdownUploader.vue';
+
 // Resource
 import JavaScript from '@/view/Resource/Languages/JavaScript.vue';
 import Python from '@/view/Resource/Languages/Python.vue';
@@ -39,7 +41,7 @@ import Magnetometer from '@/view/R&D/Magnetometer.vue';
 // Projects
 // import UserControl from '@/view/Projects/Browser_Extensions/UserControl.vue';
 
-Vue.use(VueRouter); 
+Vue.use(VueRouter);
 
 const routes = [
   // { path: '/personal-details', component: PersonalDetails },
@@ -132,8 +134,11 @@ const routes = [
     name: 'Magnetometer',
     component: Magnetometer,
   },
-
-
+  {
+    path: '/MarkdownUploader',
+    name: 'MarkdownUploader',
+    component: MarkdownUploader,
+  },
 
   // {
   //   path: '/UserControl',

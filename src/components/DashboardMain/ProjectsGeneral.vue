@@ -20,15 +20,13 @@
       <div>
         <ul class="neutral-color pt-0">
           <li class="mb-2 pl-2">
-            <div>
-              <span class="font-weight-bold neutral-color">UserControl</span> - Blocks unsafe sites
+            <div class="neutral-color">
+              <span class="font-weight-bold sec-color">UserControl</span> - Blocks unsafe sites
             </div>
             <span class="fs-10 color-500 font-italic"> # (In Development, v1.9, Q3 2025)</span>
           </li>
           <li class="mb-2 pl-2">
-            <div>
-              <span class="font-weight-bold neutral-color">NoteMaster</span> - Webpage notes
-            </div>
+            <div><span class="font-weight-bold sec-color">NoteMaster</span> - Webpage notes</div>
 
             <span class="fs-10 color-500 font-italic"> # (In Development, v1.0.1, Q3 2025)</span>
           </li>
@@ -44,9 +42,7 @@
       <div>
         <ul class="neutral-color pt-0">
           <li class="mb-2 pl-2">
-            <div>
-              <span class="font-weight-bold neutral-color">DocA</span> - AI document analysis
-            </div>
+            <div><span class="font-weight-bold sec-color">DocA</span> - AI document analysis</div>
 
             <span class="fs-10 color-500 font-italic"> # (In Development, v0.1, Q3 2025)</span>
           </li>
@@ -63,7 +59,7 @@
         <ul class="neutral-color pt-0">
           <li class="mb-2 pl-2">
             <div>
-              <span class="font-weight-bold neutral-color">ChordMaster</span> - Guitar chord
+              <span class="font-weight-bold sec-color">ChordMaster</span> - Guitar chord
               visualization
             </div>
 

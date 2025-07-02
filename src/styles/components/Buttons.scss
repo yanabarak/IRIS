@@ -1,6 +1,7 @@
 .btn {
     padding: 0.25rem 0.75rem;
     min-height: 35px;
+    transition: all 300ms linear;
 
     @media (max-width: 768px) {
         min-height: 38px;
@@ -8,6 +9,21 @@
 
     &:focus {
         box-shadow: none !important;
+    }
+
+    &.main-btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 5px;
+        background-color: var(--e-global-color-secondar);
+        font-size: inherit;
+        color: var(--neutralColors_200);
+        font-weight: bold;
+
+        &:hover {
+            background-color: var(--e-global-color-tert)
+        }
     }
 }
 

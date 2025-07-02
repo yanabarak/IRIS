@@ -17,16 +17,16 @@
   </div>
 </template>
 <script>
-import CompanyGuidelines from '@/components/DashboardMain.vue/CompanyGuidelines.vue';
-import Resource from '@/components/DashboardMain.vue/Resource.vue';
-import EngineeringAssets from '@/components/DashboardMain.vue/EngineeringAssets.vue';
-import RD from '@/components/DashboardMain.vue/RD.vue';
-import BusinessResearch from '@/components/DashboardMain.vue/BusinessResearch.vue';
+import CompanyGuidelines from '@/components/DashboardMain/CompanyGuidelines.vue';
+import Resource from '@/components/DashboardMain/Resource.vue';
+import EngineeringAssets from '@/components/DashboardMain/EngineeringAssets.vue';
+import RD from '@/components/DashboardMain/RD.vue';
+import BusinessResearch from '@/components/DashboardMain/BusinessResearch.vue';
 
 import FixedBlock from '@/components/FixedBlock.vue';
 import SideBar from '@/components/SideBar.vue';
 import { mapState } from 'vuex';
-import ProjectsSidebar from '@/components/DashboardMain.vue/ProjectsSidebar.vue';
+import ProjectsSidebar from '@/components/DashboardMain/ProjectsSidebar.vue';
 
 export default {
   components: {

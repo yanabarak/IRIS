@@ -10,12 +10,9 @@
       class="ms-auto p-0 mb-3"
       id="toggleSidebar"
     >
-      <div class="animated-hamburger open">
-        <span></span><span></span><span></span><span></span>
-      </div>
     </b-button>
 
-    <div class="menu mt-1">
+    <div class="menu mt-3">
       <ul class="px-0 m-0">
         <li v-for="item in menuItems" :key="item.id" @click="handleLinkClick(item.id)">
           <div class="menu-item" style="cursor: pointer">

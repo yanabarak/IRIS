@@ -1,8 +1,8 @@
 <template>
   <div class="company-guidelines main-block-general col-12 p-3" id="company-guidelines">
     <h6>Company Guidelines</h6>
-    <div class="row">
-      <div class="block-type col-12 col-md-6">
+    <div class="columns-2">
+      <div class="block-type col-12">
         <div class="d-flex gap-2 align-items-center sec-color fs-16">
           <div class="icons-wrapper">
             <b-icon icon="code-slash" class="icon-style"></b-icon>
@@ -11,18 +11,22 @@
         </div>
         <div>
           <ul class="neutral-color pt-0">
-            <li class="pl-2 d-block d-md-flex justify-content-between"><router-link to="Product">Design of a commercial product</router-link></li>
+            <li class="pl-2 d-block d-md-flex justify-content-between">
+              <router-link to="Product">Design of a commercial product</router-link>
+            </li>
             <li class="pl-2 d-block d-md-flex justify-content-between">Development Workflow</li>
             <li class="pl-2 d-block d-md-flex justify-content-between">Code Standards</li>
             <li class="pl-2 d-block d-md-flex justify-content-between">Release Process</li>
             <li class="pl-2 d-block d-md-flex justify-content-between">Product Lifecycle</li>
-            <li class="pl-2 d-block d-md-flex justify-content-between">Minimum Viable Product (MVP) Criteria</li>
+            <li class="pl-2 d-block d-md-flex justify-content-between">
+              Minimum Viable Product (MVP) Criteria
+            </li>
             <li class="pl-2 d-block d-md-flex justify-content-between">Feedback Collection</li>
             <li class="pl-2 d-block d-md-flex justify-content-between">Testing and QA</li>
           </ul>
         </div>
       </div>
-      <div class="block-type col-12 col-md-6">
+      <div class="block-type col-12">
         <div class="d-flex gap-2 align-items-center sec-color fs-16">
           <div class="icons-wrapper">
             <b-icon icon="journal-text" class="icon-style"></b-icon>
@@ -31,15 +35,25 @@
         </div>
         <div>
           <ul class="neutral-color pt-0">
-            <li class="pl-2 d-block d-md-flex justify-content-between"><router-link to="Browser_Extension">Browser Extension Development</router-link></li>
-            <li class="pl-2 d-block d-md-flex justify-content-between"><router-link to="Web_Application">Web Application Development</router-link></li>
-            <li class="pl-2 d-block d-md-flex justify-content-between"><router-link to="API_Documentation">API Documentation</router-link></li>
-            <li class="pl-2 d-block d-md-flex justify-content-between"><router-link to="User_Documentation">User Documentation/Manuals</router-link></li>
-            <li class="pl-2 d-block d-md-flex justify-content-between"><router-link to="Documentation_Standards">Documentation Standards</router-link></li>
+            <li class="pl-2 d-block d-md-flex justify-content-between">
+              <router-link to="Browser_Extension">Browser Extension Development</router-link>
+            </li>
+            <li class="pl-2 d-block d-md-flex justify-content-between">
+              <router-link to="Web_Application">Web Application Development</router-link>
+            </li>
+            <li class="pl-2 d-block d-md-flex justify-content-between">
+              <router-link to="API_Documentation">API Documentation</router-link>
+            </li>
+            <li class="pl-2 d-block d-md-flex justify-content-between">
+              <router-link to="User_Documentation">User Documentation/Manuals</router-link>
+            </li>
+            <li class="pl-2 d-block d-md-flex justify-content-between">
+              <router-link to="Documentation_Standards">Documentation Standards</router-link>
+            </li>
           </ul>
         </div>
       </div>
-      <div class="block-type col-12 col-md-6">
+      <div class="block-type col-12">
         <div class="d-flex gap-2 align-items-center sec-color fs-16">
           <div class="icons-wrapper">
             <svg
@@ -59,15 +73,25 @@
         </div>
         <div>
           <ul class="neutral-color pt-0">
-            <li class="pl-2 d-block d-md-flex justify-content-between"><router-link to="Version_Naming">Version Naming</router-link></li>
-            <li class="pl-2 d-block d-md-flex justify-content-between"><router-link to="Git_Workflow">Git Workflow</router-link></li>
-            <li class="pl-2 d-block d-md-flex justify-content-between"><router-link to="Release_Strategy">Release Strategy</router-link></li>
-            <li class="pl-2 d-block d-md-flex justify-content-between"><router-link to="Rollback_Plan">Rollback Plan</router-link></li>
-            <li class="pl-2 d-block d-md-flex justify-content-between"><router-link to="Changelog_Guidelines">Changelog Guidelines</router-link></li>
+            <li class="pl-2 d-block d-md-flex justify-content-between">
+              <router-link to="Version_Naming">Version Naming</router-link>
+            </li>
+            <li class="pl-2 d-block d-md-flex justify-content-between">
+              <router-link to="Git_Workflow">Git Workflow</router-link>
+            </li>
+            <li class="pl-2 d-block d-md-flex justify-content-between">
+              <router-link to="Release_Strategy">Release Strategy</router-link>
+            </li>
+            <li class="pl-2 d-block d-md-flex justify-content-between">
+              <router-link to="Rollback_Plan">Rollback Plan</router-link>
+            </li>
+            <li class="pl-2 d-block d-md-flex justify-content-between">
+              <router-link to="Changelog_Guidelines">Changelog Guidelines</router-link>
+            </li>
           </ul>
         </div>
       </div>
-      <div class="block-type col-12 col-md-6">
+      <div class="block-type col-12">
         <div class="d-flex gap-2 align-items-center sec-color fs-16">
           <div class="icons-wrapper">
             <b-icon icon="shield" class="icon-style"></b-icon>
@@ -79,26 +103,33 @@
             <li class="pl-2 d-block d-md-flex justify-content-between">Secure Coding Practices</li>
             <li class="pl-2 d-block d-md-flex justify-content-between">Dependency Management</li>
             <li class="pl-2 d-block d-md-flex justify-content-between">Incident Response</li>
-            <li class="pl-2 d-block d-md-flex justify-content-between">Data Privacy and Compliance</li>
+            <li class="pl-2 d-block d-md-flex justify-content-between">
+              Data Privacy and Compliance
+            </li>
           </ul>
         </div>
       </div>
 
-      <div class="block-type col-12 col-md-6">
+      <div class="block-type col-12">
         <div class="d-flex gap-2 align-items-center sec-color fs-16">
           <div class="icons-wrapper">
-            <b-icon icon="shield" class="icon-style"></b-icon>
+            <b-icon icon="people" class="icon-style"></b-icon>
           </div>
           Team Collaboration
         </div>
         <div>
           <ul class="neutral-color pt-0">
-            <li class="pl-2 d-block d-md-flex justify-content-between">Communication Tools and Practices</li>
+            <li class="pl-2 d-block d-md-flex justify-content-between">
+              Communication Tools and Practices
+            </li>
             <li class="pl-2 d-block d-md-flex justify-content-between">Onboarding Process</li>
-            <li class="pl-2 d-block d-md-flex justify-content-between">Meeting and Review Cadence</li>
+            <li class="pl-2 d-block d-md-flex justify-content-between">
+              Meeting and Review Cadence
+            </li>
           </ul>
         </div>
       </div>
     </div>
   </div>
 </template>
+<script></script>

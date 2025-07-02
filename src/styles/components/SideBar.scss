@@ -57,6 +57,13 @@
 
         .menu-item {
             padding: 10px !important;
+            border-radius: 5px;
+            background-color: transparent;
+
+            &:hover {
+                color: rgb(255, 0, 120) !important;
+                background-color: var(--neutralColors_800);
+            }
         }
 
         .menu-item .text {
@@ -323,6 +330,21 @@
 
     }
 
+}
+
+.b-sidebar-outer #toggleSidebar {
+    position: absolute;
+    z-index: 1;
+    top: 0px;
+    width: 100%;
+    left: 0;
+    height: 100%;
+    cursor: col-resize
+}
+
+.custom-sidebar .b-sidebar .menu li {
+    position: relative;
+    z-index: 2;
 }
 
 .open .animated-hamburger {
