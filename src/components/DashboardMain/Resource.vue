@@ -11,12 +11,12 @@
         </div>
         <div>
           <ul class="neutral-color pt-0">
-            <li class="pl-2 d-block d-md-flex justify-content-between">Team Credentials</li>
-            <li class="pl-2 d-block d-md-flex justify-content-between">Mails Logins</li>
-            <li class="pl-2 d-block d-md-flex justify-content-between">Server Logins</li>
             <li class="pl-2 d-block d-md-flex justify-content-between">
-              <router-link to="/MarkdownUploader">LOADER MD</router-link>
+              <router-link to="/MarkdownUploader">Passwords manager</router-link>
             </li>
+            <li class="pl-2 d-block d-md-flex justify-content-between">Team Credentials</li>
+            <li class="pl-2 d-block d-md-flex justify-content-between">Access Management Policies</li>
+
           </ul>
         </div>
       </div>
@@ -31,6 +31,8 @@
           <ul class="neutral-color pt-0">
             <li class="pl-2 d-block d-md-flex justify-content-between">Internal Endpoints</li>
             <li class="pl-2 d-block d-md-flex justify-content-between">External Services</li>
+            <li class="pl-2 d-block d-md-flex justify-content-between">API Security</li>
+            <li class="pl-2 d-block d-md-flex justify-content-between">API Clients / Wrappers (SDKs)</li>
           </ul>
         </div>
       </div>
@@ -51,16 +53,26 @@
               />
             </svg>
           </div>
-          Languages
+          Stacks
         </div>
         <div>
           <ul class="neutral-color pt-0">
+            <li class="pl-2 d-block d-md-flex justify-content-between">Languages</li>
             <li class="pl-2 d-block d-md-flex justify-content-between">
-              <router-link to="JavaScript">JavaScript (ES6+)</router-link>
+              <router-link to="JavaScript">&nbsp; 🔹 JavaScript (ES6+)</router-link>
             </li>
             <li class="pl-2 d-block d-md-flex justify-content-between">
-              <router-link to="Python">Python (3.x)</router-link>
+              <router-link to="Python">&nbsp; 🔹 Python (3.x)</router-link>
             </li>
+            <li class="pl-2 d-block d-md-flex justify-content-between">Frameworks</li>
+            <li class="pl-2 d-block d-md-flex justify-content-between"><router-link to="JavaScript">&nbsp; 🔹 Vue.js</router-link></li>
+            <li class="pl-2 d-block d-md-flex justify-content-between">Runtime Environment</li>
+            <li class="pl-2 d-block d-md-flex justify-content-between"><router-link to="JavaScript">&nbsp; 🔹 Node.js</router-link></li>
+            <li class="pl-2 d-block d-md-flex justify-content-between">Tools</li>
+            <li class="pl-2 d-block d-md-flex justify-content-between"><router-link to="JavaScript">&nbsp; 🔹 npm / yarn</router-link></li>
+            <li class="pl-2 d-block d-md-flex justify-content-between"><router-link to="JavaScript">&nbsp; 🔹 Vite / Webpack</router-link></li>
+            <li class="pl-2 d-block d-md-flex justify-content-between"><router-link to="JavaScript">Technology Evaluation Process</router-link></li>
+
           </ul>
         </div>
       </div>
@@ -69,14 +81,12 @@
           <div class="icons-wrapper">
             <b-icon icon="hdd" class="icon-style"></b-icon>
           </div>
-          Servers
+          Infrastructure
         </div>
         <div>
           <ul class="neutral-color pt-0">
             <li class="pl-2 d-block d-md-flex justify-content-between">
-              <router-link to="List_Server"
-                >List of free hosting with PHP, Node.js or Python</router-link
-              >
+              <router-link to="List_Server">Hosting (Free and Paid Options)</router-link>
             </li>
             <li class="pl-2 d-block d-md-flex justify-content-between">
               <router-link to="Firebase">Firebase (Authentication, Firestore)</router-link>
@@ -84,9 +94,13 @@
             <li class="pl-2 d-block d-md-flex justify-content-between">
               <router-link to="Cloud_Run">Cloud Run (Containerized Apps)</router-link>
             </li>
+            <li class="pl-2 d-block d-md-flex justify-content-between">
+              <router-link to="Cloud_Run">Infrastructure Monitoring and Maintenance (Containerized Apps)</router-link>
+            </li>
           </ul>
         </div>
       </div>
+
       <div class="block-type col-12 col-md-6">
         <div class="d-flex gap-2 align-items-center sec-color fs-16">
           <div class="icons-wrapper">
@@ -96,10 +110,11 @@
         </div>
         <div>
           <ul class="neutral-color pt-0">
-            <li class="pl-2 d-block d-md-flex justify-content-between">
-              <router-link to="Groq">Groq</router-link>
-            </li>
-            <li class="pl-2 d-block d-md-flex justify-content-between">Grok</li>
+            <li class="pl-2 d-block d-md-flex justify-content-between"><router-link to="Groq">Groq</router-link></li>
+            <li class="pl-2 d-block d-md-flex justify-content-between"><router-link to="Groq">GroK</router-link></li><br>
+            <li class="pl-2 d-block d-md-flex justify-content-between"><router-link to="Groq">Prompts Library</router-link></li>
+            <li class="pl-2 d-block d-md-flex justify-content-between"><router-link to="Groq">Best Practices for AI-assisted coding/AI Use Cases</router-link></li>
+            <li class="pl-2 d-block d-md-flex justify-content-between"><router-link to="Groq">AI Integration Guidelines</router-link></li>
           </ul>
         </div>
       </div>
@@ -119,12 +134,54 @@
               />
             </svg>
           </div>
-          Domains
+          Domain Management
         </div>
         <div>
           <ul class="neutral-color pt-0">
             <li class="pl-2 d-block d-md-flex justify-content-between">
-              <router-link to="Free_Domains">Free domains</router-link>
+              <router-link to="Free_Domains">Domain Registration (Free and Paid)</router-link>
+            </li>
+            <li class="pl-2 d-block d-md-flex justify-content-between">
+              <router-link to="Free_Domains">DNS Configuration</router-link>
+            </li>
+            <li class="pl-2 d-block d-md-flex justify-content-between">
+              <router-link to="Free_Domains">SSL/TLS Certificates</router-link>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="block-type col-12 col-md-6">
+        <div class="d-flex gap-2 align-items-center sec-color fs-16">
+          <div class="icons-wrapper">
+            <b-icon icon="hdd" class="icon-style"></b-icon>
+          </div>
+          Tools and Software
+        </div>
+        <div>
+          <ul class="neutral-color pt-0">
+            <li class="pl-2 d-block d-md-flex justify-content-between">
+              <router-link to="List_Server">Development Tools (IDE, Git Clients)</router-link>
+            </li>
+            <li class="pl-2 d-block d-md-flex justify-content-between">
+              <router-link to="Firebase">Design Tools (Figma, Adobe XD)</router-link>
+            </li>
+            <li class="pl-2 d-block d-md-flex justify-content-between">
+              <router-link to="Cloud_Run">Testing Tools (Postman, Jest)</router-link>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="block-type col-12 col-md-6">
+        <div class="d-flex gap-2 align-items-center sec-color fs-16">
+          <div class="icons-wrapper">
+            <b-icon icon="hdd" class="icon-style"></b-icon>
+          </div>
+          License Keys
+        </div>
+        <div>
+          <ul class="neutral-color pt-0">
+            <li class="pl-2 d-block d-md-flex justify-content-between">
+              <router-link to="/MarkdownUploader">List</router-link>
             </li>
           </ul>
         </div>
