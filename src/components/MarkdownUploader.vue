@@ -29,27 +29,50 @@
 
 <script>
 import { marked } from 'marked';
+const renderer = new marked.Renderer();
+
+renderer.paragraph = function (text) {
+  const content = typeof text === 'string' ? text : text.text;
+  return `<pre>${content}</pre>`;
+};
 
 export default {
+  props: {
+    storageKey: {
+      type: String,
+      default: '',
+    },
+  },
   data() {
     return {
       fileName: '',
       markdownContent: '',
       isDragging: false,
+      internalStorageKey: '', // Окреме поле
     };
   },
-  computed: {
-    renderedMarkdown() {
-      return marked(this.markdownContent);
+  watch: {
+    '$route.query.key': {
+      immediate: true,
+      handler(val) {
+        if (val) this.internalStorageKey = val;
+      },
     },
   },
   created() {
-    const storedContent = localStorage.getItem('markdownContent');
-    const storedName = localStorage.getItem('markdownFileName');
+    const key = this.internalStorageKey;
+    const storedContent = localStorage.getItem(`${key}-content`);
+    const storedName = localStorage.getItem(`${key}-fileName`);
     if (storedContent && storedName) {
       this.markdownContent = storedContent;
       this.fileName = storedName;
     }
+  },
+
+  computed: {
+    renderedMarkdown() {
+      return marked(this.markdownContent, { renderer });
+    },
   },
   methods: {
     triggerFileInput() {
@@ -71,20 +94,20 @@ export default {
       }
 
       this.fileName = file.name;
-      localStorage.setItem('markdownFileName', file.name);
+      localStorage.setItem(`${this.internalStorageKey}-fileName`, file.name);
 
       const reader = new FileReader();
       reader.onload = e => {
         this.markdownContent = e.target.result;
-        localStorage.setItem('markdownContent', e.target.result);
+        localStorage.setItem(`${this.internalStorageKey}-content`, e.target.result);
       };
       reader.readAsText(file);
     },
     clearStoredFile() {
       this.fileName = '';
       this.markdownContent = '';
-      localStorage.removeItem('markdownFileName');
-      localStorage.removeItem('markdownContent');
+      localStorage.removeItem(`${this.internalStorageKey}-fileName`);
+      localStorage.removeItem(`${this.internalStorageKey}-content`);
       this.$refs.fileInput.value = '';
     },
   },

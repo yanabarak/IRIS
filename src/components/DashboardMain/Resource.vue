@@ -1,8 +1,8 @@
 <template>
   <div class="resource main-block-general col-12 p-3" id="resource">
     <h6>Resource</h6>
-    <div class="row">
-      <div class="block-type col-12 col-md-6">
+    <div class="columns-2">
+      <div class="block-type col-12">
         <div class="d-flex gap-2 align-items-center sec-color fs-16">
           <div class="icons-wrapper">
             <b-icon icon="key" class="icon-style"></b-icon>
@@ -12,31 +12,18 @@
         <div>
           <ul class="neutral-color pt-0">
             <li class="pl-2 d-block d-md-flex justify-content-between">
-              <router-link to="/MarkdownUploader">Passwords manager</router-link>
+              <router-link :to="{ path: '/MarkdownUploader', query: { key: 'passwords' } }">
+                Passwords manager
+              </router-link>
             </li>
             <li class="pl-2 d-block d-md-flex justify-content-between">Team Credentials</li>
-            <li class="pl-2 d-block d-md-flex justify-content-between">Access Management Policies</li>
-
+            <li class="pl-2 d-block d-md-flex justify-content-between">
+              Access Management Policies
+            </li>
           </ul>
         </div>
       </div>
-      <div class="block-type col-12 col-md-6">
-        <div class="d-flex gap-2 align-items-center sec-color fs-16">
-          <div class="icons-wrapper">
-            <b-icon icon="share" class="icon-style"></b-icon>
-          </div>
-          APIs
-        </div>
-        <div>
-          <ul class="neutral-color pt-0">
-            <li class="pl-2 d-block d-md-flex justify-content-between">Internal Endpoints</li>
-            <li class="pl-2 d-block d-md-flex justify-content-between">External Services</li>
-            <li class="pl-2 d-block d-md-flex justify-content-between">API Security</li>
-            <li class="pl-2 d-block d-md-flex justify-content-between">API Clients / Wrappers (SDKs)</li>
-          </ul>
-        </div>
-      </div>
-      <div class="block-type col-12 col-md-6">
+      <div class="block-type col-12">
         <div class="d-flex gap-2 align-items-center sec-color fs-16">
           <div class="icons-wrapper">
             <svg
@@ -57,26 +44,67 @@
         </div>
         <div>
           <ul class="neutral-color pt-0">
-            <li class="pl-2 d-block d-md-flex justify-content-between">Languages</li>
+            <li class="pl-2 d-block d-md-flex justify-content-between fw-bold">Languages</li>
             <li class="pl-2 d-block d-md-flex justify-content-between">
               <router-link to="JavaScript">&nbsp; 🔹 JavaScript (ES6+)</router-link>
             </li>
             <li class="pl-2 d-block d-md-flex justify-content-between">
               <router-link to="Python">&nbsp; 🔹 Python (3.x)</router-link>
             </li>
-            <li class="pl-2 d-block d-md-flex justify-content-between">Frameworks</li>
-            <li class="pl-2 d-block d-md-flex justify-content-between"><router-link to="JavaScript">&nbsp; 🔹 Vue.js</router-link></li>
-            <li class="pl-2 d-block d-md-flex justify-content-between">Runtime Environment</li>
-            <li class="pl-2 d-block d-md-flex justify-content-between"><router-link to="JavaScript">&nbsp; 🔹 Node.js</router-link></li>
-            <li class="pl-2 d-block d-md-flex justify-content-between">Tools</li>
-            <li class="pl-2 d-block d-md-flex justify-content-between"><router-link to="JavaScript">&nbsp; 🔹 npm / yarn</router-link></li>
-            <li class="pl-2 d-block d-md-flex justify-content-between"><router-link to="JavaScript">&nbsp; 🔹 Vite / Webpack</router-link></li>
-            <li class="pl-2 d-block d-md-flex justify-content-between"><router-link to="JavaScript">Technology Evaluation Process</router-link></li>
-
+            <li class="pl-2 d-block d-md-flex justify-content-between fw-bold">Frameworks</li>
+            <li class="pl-2 d-block d-md-flex justify-content-between">
+              <router-link to="JavaScript">&nbsp; 🔹 Vue.js</router-link>
+            </li>
+            <li class="pl-2 d-block d-md-flex justify-content-between fw-bold">
+              Runtime Environment
+            </li>
+            <li class="pl-2 d-block d-md-flex justify-content-between">
+              <router-link to="JavaScript">&nbsp; 🔹 Node.js</router-link>
+            </li>
+            <li class="pl-2 d-block d-md-flex justify-content-between fw-bold">Tools</li>
+            <li class="pl-2 d-block d-md-flex justify-content-between">
+              <router-link to="JavaScript">&nbsp; 🔹 npm / yarn</router-link>
+            </li>
+            <li class="pl-2 d-block d-md-flex justify-content-between">
+              <router-link to="JavaScript">&nbsp; 🔹 Vite / Webpack</router-link>
+            </li>
+            <li class="pl-2 d-block d-md-flex justify-content-between fw-bold">
+              <router-link to="JavaScript">Technology Evaluation Process</router-link>
+            </li>
           </ul>
         </div>
       </div>
-      <div class="block-type col-12 col-md-6">
+      <div class="block-type col-12">
+        <div class="d-flex gap-2 align-items-center sec-color fs-16">
+          <div class="icons-wrapper">
+            <b-icon icon="chat-left-dots" class="icon-style"></b-icon>
+          </div>
+          AI
+        </div>
+        <div>
+          <ul class="neutral-color pt-0">
+            <li class="pl-2 d-block d-md-flex justify-content-between">
+              <router-link to="Groq">Groq</router-link>
+            </li>
+            <li class="pl-2 d-block d-md-flex justify-content-between">
+              <router-link to="Groq">GroK</router-link>
+            </li>
+            <br />
+            <li class="pl-2 d-block d-md-flex justify-content-between">
+              <router-link to="Groq">Prompts Library</router-link>
+            </li>
+            <li class="pl-2 d-block d-md-flex justify-content-between">
+              <router-link to="Groq"
+                >Best Practices for AI-assisted coding/AI Use Cases</router-link
+              >
+            </li>
+            <li class="pl-2 d-block d-md-flex justify-content-between">
+              <router-link to="Groq">AI Integration Guidelines</router-link>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="block-type col-12">
         <div class="d-flex gap-2 align-items-center sec-color fs-16">
           <div class="icons-wrapper">
             <b-icon icon="hdd" class="icon-style"></b-icon>
@@ -95,30 +123,33 @@
               <router-link to="Cloud_Run">Cloud Run (Containerized Apps)</router-link>
             </li>
             <li class="pl-2 d-block d-md-flex justify-content-between">
-              <router-link to="Cloud_Run">Infrastructure Monitoring and Maintenance (Containerized Apps)</router-link>
+              <router-link to="Cloud_Run"
+                >Infrastructure Monitoring and Maintenance (Containerized Apps)</router-link
+              >
             </li>
           </ul>
         </div>
       </div>
 
-      <div class="block-type col-12 col-md-6">
+      <div class="block-type col-12">
         <div class="d-flex gap-2 align-items-center sec-color fs-16">
           <div class="icons-wrapper">
-            <b-icon icon="chat-left-dots" class="icon-style"></b-icon>
+            <b-icon icon="share" class="icon-style"></b-icon>
           </div>
-          AI
+          APIs
         </div>
         <div>
           <ul class="neutral-color pt-0">
-            <li class="pl-2 d-block d-md-flex justify-content-between"><router-link to="Groq">Groq</router-link></li>
-            <li class="pl-2 d-block d-md-flex justify-content-between"><router-link to="Groq">GroK</router-link></li><br>
-            <li class="pl-2 d-block d-md-flex justify-content-between"><router-link to="Groq">Prompts Library</router-link></li>
-            <li class="pl-2 d-block d-md-flex justify-content-between"><router-link to="Groq">Best Practices for AI-assisted coding/AI Use Cases</router-link></li>
-            <li class="pl-2 d-block d-md-flex justify-content-between"><router-link to="Groq">AI Integration Guidelines</router-link></li>
+            <li class="pl-2 d-block d-md-flex justify-content-between">Internal Endpoints</li>
+            <li class="pl-2 d-block d-md-flex justify-content-between">External Services</li>
+            <li class="pl-2 d-block d-md-flex justify-content-between">API Security</li>
+            <li class="pl-2 d-block d-md-flex justify-content-between">
+              API Clients / Wrappers (SDKs)
+            </li>
           </ul>
         </div>
       </div>
-      <div class="block-type col-12 col-md-6">
+      <div class="block-type col-12">
         <div class="d-flex gap-2 align-items-center sec-color fs-16">
           <div class="icons-wrapper">
             <svg
@@ -150,10 +181,10 @@
           </ul>
         </div>
       </div>
-      <div class="block-type col-12 col-md-6">
+      <div class="block-type col-12">
         <div class="d-flex gap-2 align-items-center sec-color fs-16">
           <div class="icons-wrapper">
-            <b-icon icon="hdd" class="icon-style"></b-icon>
+            <b-icon icon="tools" class="icon-style"></b-icon>
           </div>
           Tools and Software
         </div>
@@ -171,17 +202,19 @@
           </ul>
         </div>
       </div>
-      <div class="block-type col-12 col-md-6">
+      <div class="block-type col-12">
         <div class="d-flex gap-2 align-items-center sec-color fs-16">
           <div class="icons-wrapper">
-            <b-icon icon="hdd" class="icon-style"></b-icon>
+            <b-icon icon="key-fill" class="icon-style"></b-icon>
           </div>
           License Keys
         </div>
         <div>
           <ul class="neutral-color pt-0">
             <li class="pl-2 d-block d-md-flex justify-content-between">
-              <router-link to="/MarkdownUploader">List</router-link>
+              <router-link :to="{ path: '/MarkdownUploader', query: { key: 'license-keys' } }"
+                >List</router-link
+              >
             </li>
           </ul>
         </div>

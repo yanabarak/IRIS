@@ -22,6 +22,12 @@
     background: var(--secondaryColorsColor_1);
     white-space: pre-wrap;
     border-radius: 3px;
+
+    pre {
+        color: var(--neutralColors_500);
+        font-family: inherit !important;
+        font-size: 100%;
+    }
 }
 
 .underline {
