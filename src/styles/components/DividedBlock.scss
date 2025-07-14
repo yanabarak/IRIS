@@ -1,0 +1,15 @@
+.tree-structure {
+    font-family: monospace;
+
+    span {
+        cursor: pointer;
+    }
+}
+
+.breadcrumb {
+    background-color: var(--neutralColors_700);
+
+    .breadcrumb-item.active {
+        color: var(--e-global-color-secondar);
+    }
+}

@@ -14,6 +14,12 @@
         }
     }
 
+    &.full-width .logo img[src*="full"] {
+        height: auto !important;
+        width: 50% !important;
+
+    }
+
     &.full-width .logo img[src*="small"],
     &.small-width .logo img[src*="full"] {
         height: 0px !important;

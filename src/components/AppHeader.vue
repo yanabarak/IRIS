@@ -1,7 +1,7 @@
 <template>
   <header class="row mx-0 align-items-center main-header">
     <div class="logo col-auto p-0">
-      <img src="../assets/logo_full.svg" alt="logo" height="30px" class="d-none d-md-flex" />
+      <img src="../assets/logo_small.svg" alt="logo" height="30px" class="d-none d-md-flex" />
       <img src="../assets/logo_small.svg" alt="logo" height="30px" class="d-md-none" />
     </div>
     <div class="menu col-auto ms-auto position-relative p-0 gap-3 d-flex">

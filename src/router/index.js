@@ -41,6 +41,8 @@ import Magnetometer from '@/view/R&D/Magnetometer.vue';
 // Projects
 // import UserControl from '@/view/Projects/Browser_Extensions/UserControl.vue';
 
+import DividedBlock from '@/components/DividedBlock.vue';
+
 Vue.use(VueRouter);
 
 const routes = [
@@ -138,6 +140,11 @@ const routes = [
     path: '/MarkdownUploader',
     name: 'MarkdownUploader',
     component: MarkdownUploader,
+  },
+  {
+    path: '/DividedBlock',
+    name: 'DividedBlock',
+    component: DividedBlock,
   },
 
   // {
