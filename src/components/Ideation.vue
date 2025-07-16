@@ -17,7 +17,7 @@
       &nbsp; &nbsp; ├── <span class="sec-color" @click="selectItem('CleanTech')">CleanTech / Renewable Energy Tech</span><br />
     </div>
 
-    <div class="col mt-3">
+    <div class="mt-3 font-monospace col">
       <div v-if="selectedItem === 'Alphabet'" class="content">
         <b-breadcrumb>
           <b-breadcrumb-item>Business Research / Product Pipeline</b-breadcrumb-item>
@@ -39,13 +39,54 @@
           <b-breadcrumb-item active>Contracts</b-breadcrumb-item>
         </b-breadcrumb>
         <br />
-        <span class="sec-color">SmartLease</span> <br>
-        <span class="green-color">Description</span>: Блокчейн-платформа для автоматизації договорів оренди комерційної нерухомості з автоматичною перевіркою умов. <br>
-        <span class="green-color">Target audience</span>: Малий бізнес і орендодавці комерційної нерухомості (B2B). <br>
-        <span class="green-color">Problem</span>: Складність і витрати на юридичне оформлення договорів оренди, ризик невідповідності умов. <br>
-        <span class="green-color">Technologies</span>: Блокчейн для смарт-контрактів, AI для аналізу договорів, low-code для кастомізації шаблонів. <br>
-        <span class="green-color">Model of monetization</span>: Разова оплата за створення договору, підписка на додаткові юридичні консультації. <br>
-        <span class="green-color">Uniqueness</span>: Локалізовані шаблони під законодавство різних країн, інтеграція з платіжними системами.
+        <span class="sec-color">SmartLease</span> <br />
+
+        <div class="row mx-0">
+          <span class="green-color col-2 p-0 align-self-center">Description:</span>
+          <span class="desc col">
+            Блокчейн-платформа для автоматизації договорів оренди комерційної нерухомості з
+            автоматичною перевіркою умов.</span
+          >
+
+          <br />
+        </div>
+        <div class="row mx-0">
+          <span class="green-color col-2 p-0 align-self-center">Target audience:</span>
+          <span class="desc col"> Малий бізнес і орендодавці комерційної нерухомості (B2B). </span
+          ><br />
+        </div>
+        <div class="row mx-0">
+          <span class="green-color col-2 p-0 align-self-center">Problem:</span>
+          <span class="desc col">
+            Складність і витрати на юридичне оформлення договорів оренди, ризик невідповідності
+            умов.</span
+          >
+
+          <br />
+        </div>
+        <div class="row mx-0">
+          <span class="green-color col-2 p-0 align-self-center">Technologies:</span>
+          <span class="desc col">
+            Блокчейн для смарт-контрактів, AI для аналізу договорів, low-code для кастомізації
+            шаблонів.</span
+          >
+          <br />
+        </div>
+        <div class="row mx-0">
+          <span class="green-color col-2 p-0 align-self-center">Model of monetization:</span>
+          <span class="desc col">
+            Разова оплата за створення договору, підписка на додаткові юридичні консультації.</span
+          >
+
+          <br />
+        </div>
+        <div class="row mx-0">
+          <span class="green-color col-2 p-0 align-self-center">Uniqueness:</span>
+          <span class="desc col">
+            Локалізовані шаблони під законодавство різних країн, інтеграція з платіжними
+            системами.</span
+          >
+        </div>
       </div>
 
       <div v-if="selectedItem === 'Monitoring'" class="content">
@@ -57,13 +98,48 @@
           <b-breadcrumb-item active>Monitoring</b-breadcrumb-item>
         </b-breadcrumb>
         <br />
-        <span class="sec-color">AgroTrack</span> <br>
-        <span class="green-color">Description</span>: Простий вебінтерфейс для моніторингу агросенсорів (вологість, температура, pH ґрунту) із сповіщеннями та рекомендаціями. <br>
-        <span class="green-color">Target audience</span>: Малі та середні фермери, аграрні кооперативи. <br>
-        <span class="green-color">Problem</span>: Відсутність дешевих рішень для моніторингу стану полів у реальному часі. <br>
-        <span class="green-color">Technologies</span>:  IoT (LoRaWAN, NB-IoT), AI-передбачення (наприклад, ризик грибків), PWA. <br>
-        <span class="green-color">Model of monetization</span>: SaaS-доступ + продаж/партнерство з виробниками сенсорів. <br>
-        <span class="green-color">Uniqueness</span>: Фокус на “простих фермерів” — легкий старт, мобільна оптимізація, офлайн-режим.
+        <span class="sec-color">AgroTrack</span> <br />
+
+        <div class="row mx-0">
+          <span class="green-color col-2 p-0 align-self-center">Description:</span>
+          <span class="desc col">
+            Простий вебінтерфейс для моніторингу агросенсорів (вологість, температура, pH ґрунту) із
+            сповіщеннями та рекомендаціями.</span
+          >
+
+          <br />
+        </div>
+        <div class="row mx-0">
+          <span class="green-color col-2 p-0 align-self-center">Target audience:</span>
+          <span class="desc col"> Малі та середні фермери, аграрні кооперативи.</span> <br />
+        </div>
+        <div class="row mx-0">
+          <span class="green-color col-2 p-0 align-self-center">Problem:</span>
+          <span class="desc col">
+            Відсутність дешевих рішень для моніторингу стану полів у реальному часі.</span
+          >
+
+          <br />
+        </div>
+        <div class="row mx-0">
+          <span class="green-color col-2 p-0 align-self-center">Technologies:</span>
+          <span class="desc col">
+            IoT (LoRaWAN, NB-IoT), AI-передбачення (наприклад, ризик грибків), PWA.</span
+          >
+
+          <br />
+        </div>
+        <div class="row mx-0">
+          <span class="green-color col-2 p-0 align-self-center">Model of monetization:</span>
+          <span class="desc col"> SaaS-доступ + продаж/партнерство з виробниками сенсорів.</span>
+          <br />
+        </div>
+        <div class="row mx-0">
+          <span class="green-color col-2 p-0 align-self-center">Uniqueness:</span>
+          <span class="desc col">
+            Фокус на “простих фермерів” — легкий старт, мобільна оптимізація, офлайн-режим.</span
+          >
+        </div>
       </div>
 
       <div v-if="selectedItem === 'Analysis'" class="content">
@@ -75,17 +151,64 @@
           <b-breadcrumb-item active>Analysis</b-breadcrumb-item>
         </b-breadcrumb>
         <br />
-        <span class="sec-color">WindAnalyzer</span> <br>
-        <span class="green-color">Description</span>: AI-система для аналізу ефективності використання вітрової енергії у певному регіоні. Розраховує потенційні заощадження на електроенергії та оптимізує роботу вітрових установок. <br>
-        <span class="green-color">Target audience</span>: Власники вітрових електростанцій (ВЕС). Енергетичні компанії та державні організації. Інвестори у відновлювану енергетику. <br>
-        <span class="green-color">Problem</span>: Відсутність точних та доступних інструментів для оцінки ефективності вітрової генерації в конкретних локаціях, що ускладнює прийняття рішень щодо інвестицій та оптимізації виробництва. <br>
-        <span class="green-color">Technologies</span>: AI/ML (прогнозування вітрового потенціалу на основі історичних даних). GIS-аналіз (оцінка рельєфу та інших географічних факторів). PWA (доступ до даних з будь-якого пристрою). <br>
-        <span class="green-color">Model of monetization</span>: SaaS-підписка для доступу до аналітики. Індивідуальні консультації для великих енергокомпаній. Партнерства з виробниками вітрових турбін. <br>
-        <span class="green-color">Uniqueness</span>: Комплексний підхід: від оцінки потенціалу до розрахунку економії. Інтуїтивний інтерфейс для не-технічних користувачів. Інтеграція з даними метеорологічних служб та IoT-сенсорів.
+        <span class="sec-color">WindAnalyzer</span> <br />
+        <div class="row mx-0">
+          <span class="green-color col-2 p-0 align-self-center">Description:</span>
+          <span class="desc col">
+            AI-система для аналізу ефективності використання вітрової енергії у певному регіоні.
+            Розраховує потенційні заощадження на електроенергії та оптимізує роботу вітрових
+            установок.</span
+          >
+
+          <br />
+        </div>
+        <div class="row mx-0">
+          <span class="green-color col-2 p-0 align-self-center">Target audience:</span>
+          <span class="desc col">
+            Власники вітрових електростанцій (ВЕС). Енергетичні компанії та державні організації.
+            Інвестори у відновлювану енергетику.</span
+          >
+
+          <br />
+        </div>
+        <div class="row mx-0">
+          <span class="green-color col-2 p-0 align-self-center">Problem:</span>
+          <span class="desc col">
+            Відсутність точних та доступних інструментів для оцінки ефективності вітрової генерації
+            в конкретних локаціях, що ускладнює прийняття рішень щодо інвестицій та оптимізації
+            виробництва.</span
+          >
+
+          <br />
+        </div>
+        <div class="row mx-0">
+          <span class="green-color col-2 p-0 align-self-center">Technologies:</span>
+          <span class="desc col">
+            AI/ML (прогнозування вітрового потенціалу на основі історичних даних). GIS-аналіз
+            (оцінка рельєфу та інших географічних факторів). PWA (доступ до даних з будь-якого
+            пристрою).</span
+          >
+
+          <br />
+        </div>
+        <div class="row mx-0">
+          <span class="green-color col-2 p-0 align-self-center">Model of monetization:</span>
+          <span class="desc col">
+            SaaS-підписка для доступу до аналітики. Індивідуальні консультації для великих
+            енергокомпаній. Партнерства з виробниками вітрових турбін.</span
+          >
+
+          <br />
+        </div>
+        <div class="row mx-0">
+          <span class="green-color col-2 p-0 align-self-center">Uniqueness:</span>
+          <span class="desc col">
+            Комплексний підхід: від оцінки потенціалу до розрахунку економії. Інтуїтивний інтерфейс
+            для не-технічних користувачів. Інтеграція з даними метеорологічних служб та
+            IoT-сенсорів.</span
+          >
+        </div>
       </div>
-
-
-
 
       <div v-if="selectedItem === 'Legal_Services'" class="content">
         <b-breadcrumb>
@@ -95,13 +218,54 @@
           <b-breadcrumb-item active>Legal Services</b-breadcrumb-item>
         </b-breadcrumb>
         <br />
-        <span class="sec-color">SmartLease</span> <br>
-        <span class="green-color">Description</span>: Блокчейн-платформа для автоматизації договорів оренди комерційної нерухомості з автоматичною перевіркою умов. <br>
-        <span class="green-color">Target audience</span>: Малий бізнес і орендодавці комерційної нерухомості (B2B). <br>
-        <span class="green-color">Problem</span>: Складність і витрати на юридичне оформлення договорів оренди, ризик невідповідності умов. <br>
-        <span class="green-color">Technologies</span>: Блокчейн для смарт-контрактів, AI для аналізу договорів, low-code для кастомізації шаблонів. <br>
-        <span class="green-color">Model of monetization</span>: Разова оплата за створення договору, підписка на додаткові юридичні консультації. <br>
-        <span class="green-color">Uniqueness</span>: Локалізовані шаблони під законодавство різних країн, інтеграція з платіжними системами.
+        <span class="sec-color">SmartLease</span> <br />
+        <div class="row mx-0">
+          <span class="green-color col-2 p-0 align-self-center">Description:</span>
+          <span class="desc col">
+            Блокчейн-платформа для автоматизації договорів оренди комерційної нерухомості з
+            автоматичною перевіркою умов.</span
+          >
+
+          <br />
+        </div>
+        <div class="row mx-0">
+          <span class="green-color col-2 p-0 align-self-center">Target audience:</span>
+          <span class="desc col"> Малий бізнес і орендодавці комерційної нерухомості (B2B).</span>
+          <br />
+        </div>
+        <div class="row mx-0">
+          <span class="green-color col-2 p-0 align-self-center">Problem:</span>
+          <span class="desc col">
+            Складність і витрати на юридичне оформлення договорів оренди, ризик невідповідності
+            умов.</span
+          >
+
+          <br />
+        </div>
+        <div class="row mx-0">
+          <span class="green-color col-2 p-0 align-self-center">Technologies:</span>
+          <span class="desc col">
+            Блокчейн для смарт-контрактів, AI для аналізу договорів, low-code для кастомізації
+            шаблонів.</span
+          >
+
+          <br />
+        </div>
+        <div class="row mx-0">
+          <span class="green-color col-2 p-0 align-self-center">Model of monetization:</span>
+          <span class="desc col">
+            Разова оплата за створення договору, підписка на додаткові юридичні консультації.</span
+          >
+
+          <br />
+        </div>
+        <div class="row mx-0">
+          <span class="green-color col-2 p-0 align-self-center">Uniqueness:</span>
+          <span class="desc col">
+            Локалізовані шаблони під законодавство різних країн, інтеграція з платіжними
+            системами.</span
+          >
+        </div>
       </div>
 
       <div v-if="selectedItem === 'Agricultural_Technology'" class="content">
@@ -112,13 +276,47 @@
           <b-breadcrumb-item active>Agricultural Technology</b-breadcrumb-item>
         </b-breadcrumb>
         <br />
-        <span class="sec-color">AgroTrack</span> <br>
-        <span class="green-color">Description</span>: Простий вебінтерфейс для моніторингу агросенсорів (вологість, температура, pH ґрунту) із сповіщеннями та рекомендаціями. <br>
-        <span class="green-color">Target audience</span>: Малі та середні фермери, аграрні кооперативи. <br>
-        <span class="green-color">Problem</span>: Відсутність дешевих рішень для моніторингу стану полів у реальному часі. <br>
-        <span class="green-color">Technologies</span>:  IoT (LoRaWAN, NB-IoT), AI-передбачення (наприклад, ризик грибків), PWA. <br>
-        <span class="green-color">Model of monetization</span>: SaaS-доступ + продаж/партнерство з виробниками сенсорів. <br>
-        <span class="green-color">Uniqueness</span>: Фокус на “простих фермерів” — легкий старт, мобільна оптимізація, офлайн-режим.
+        <span class="sec-color">AgroTrack</span> <br />
+        <div class="row mx-0">
+          <span class="green-color col-2 p-0 align-self-center">Description:</span>
+          <span class="desc col">
+            Простий вебінтерфейс для моніторингу агросенсорів (вологість, температура, pH ґрунту) із
+            сповіщеннями та рекомендаціями.</span
+          >
+
+          <br />
+        </div>
+        <div class="row mx-0">
+          <span class="green-color col-2 p-0 align-self-center">Target audience:</span>
+          <span class="desc col"> Малі та середні фермери, аграрні кооперативи.</span> <br />
+        </div>
+        <div class="row mx-0">
+          <span class="green-color col-2 p-0 align-self-center">Problem:</span>
+          <span class="desc col">
+            Відсутність дешевих рішень для моніторингу стану полів у реальному часі.</span
+          >
+
+          <br />
+        </div>
+        <div class="row mx-0">
+          <span class="green-color col-2 p-0 align-self-center">Technologies:</span>
+          <span class="desc col">
+            IoT (LoRaWAN, NB-IoT), AI-передбачення (наприклад, ризик грибків), PWA.</span
+          >
+
+          <br />
+        </div>
+        <div class="row mx-0">
+          <span class="green-color col-2 p-0 align-self-center">Model of monetization:</span>
+          <span class="desc col"> SaaS-доступ + продаж/партнерство з виробниками сенсорів.</span>
+          <br />
+        </div>
+        <div class="row mx-0">
+          <span class="green-color col-2 p-0 align-self-center">Uniqueness:</span>
+          <span class="desc col">
+            Фокус на “простих фермерів” — легкий старт, мобільна оптимізація, офлайн-режим.</span
+          >
+        </div>
       </div>
 
       <div v-if="selectedItem === 'CleanTech'" class="content">
@@ -129,18 +327,66 @@
           <b-breadcrumb-item active>Analysis</b-breadcrumb-item>
         </b-breadcrumb>
         <br />
-        <span class="sec-color">WindAnalyzer</span> <br>
-        <span class="green-color">Description</span>: AI-система для аналізу ефективності використання вітрової енергії у певному регіоні. Розраховує потенційні заощадження на електроенергії та оптимізує роботу вітрових установок. <br>
-        <span class="green-color">Target audience</span>: Власники вітрових електростанцій (ВЕС). Енергетичні компанії та державні організації. Інвестори у відновлювану енергетику. <br>
-        <span class="green-color">Problem</span>: Відсутність точних та доступних інструментів для оцінки ефективності вітрової генерації в конкретних локаціях, що ускладнює прийняття рішень щодо інвестицій та оптимізації виробництва. <br>
-        <span class="green-color">Technologies</span>: AI/ML (прогнозування вітрового потенціалу на основі історичних даних). GIS-аналіз (оцінка рельєфу та інших географічних факторів). PWA (доступ до даних з будь-якого пристрою). <br>
-        <span class="green-color">Model of monetization</span>: SaaS-підписка для доступу до аналітики. Індивідуальні консультації для великих енергокомпаній. Партнерства з виробниками вітрових турбін. <br>
-        <span class="green-color">Uniqueness</span>: Комплексний підхід: від оцінки потенціалу до розрахунку економії. Інтуїтивний інтерфейс для не-технічних користувачів. Інтеграція з даними метеорологічних служб та IoT-сенсорів.
+        <span class="sec-color">WindAnalyzer</span> <br />
+        <div class="row mx-0">
+          <span class="green-color col-2 p-0 align-self-center">Description:</span>
+          <span class="desc col">
+            AI-система для аналізу ефективності використання вітрової енергії у певному регіоні.
+            Розраховує потенційні заощадження на електроенергії та оптимізує роботу вітрових
+            установок.</span
+          >
+
+          <br />
+        </div>
+        <div class="row mx-0">
+          <span class="green-color col-2 p-0 align-self-center">Target audience:</span>
+          <span class="desc col">
+            Власники вітрових електростанцій (ВЕС). Енергетичні компанії та державні організації.
+            Інвестори у відновлювану енергетику.</span
+          >
+
+          <br />
+        </div>
+        <div class="row mx-0">
+          <span class="green-color col-2 p-0 align-self-center">Problem:</span>
+          <span class="desc col">
+            Відсутність точних та доступних інструментів для оцінки ефективності вітрової генерації
+            в конкретних локаціях, що ускладнює прийняття рішень щодо інвестицій та оптимізації
+            виробництва.</span
+          >
+
+          <br />
+        </div>
+        <div class="row mx-0">
+          <span class="green-color col-2 p-0 align-self-center">Technologies:</span>
+          <span class="desc col">
+            AI/ML (прогнозування вітрового потенціалу на основі історичних даних). GIS-аналіз
+            (оцінка рельєфу та інших географічних факторів). PWA (доступ до даних з будь-якого
+            пристрою).</span
+          >
+
+          <br />
+        </div>
+        <div class="row mx-0">
+          <span class="green-color col-2 p-0 align-self-center">Model of monetization:</span>
+          <span class="desc col">
+            SaaS-підписка для доступу до аналітики. Індивідуальні консультації для великих
+            енергокомпаній. Партнерства з виробниками вітрових турбін.</span
+          >
+
+          <br />
+        </div>
+        <div class="row mx-0">
+          <span class="green-color col-2 p-0 align-self-center">Uniqueness:</span>
+          <span class="desc col">
+            Комплексний підхід: від оцінки потенціалу до розрахунку економії. Інтуїтивний інтерфейс
+            для не-технічних користувачів. Інтеграція з даними метеорологічних служб та
+            IoT-сенсорів.</span
+          >
+        </div>
       </div>
 
-
-
-<!-- List of areas of activity
+      <!-- List of areas of activity
 Агробізнес (сільське господарство, тваринництво, садівництво)
 Будівництво (житлове, промислове, дорожнє)
 Медицина та фармацевтика (лікування, дослідження, виробництво ліків)
@@ -170,7 +416,7 @@ IT та телекомунікації (програмування, кіберб
 Соціальні послуги (благодійність, соціальний захист)
 Психологія -->
 
-<!--
+      <!--
 Технології та інновації
     Штучний інтелект (AI) та машинне навчання
     Робототехніка та автоматизація
@@ -255,7 +501,9 @@ IT та телекомунікації (програмування, кіберб
     Вишивка та ткацтво
     Бондарство (виготовлення бочок)
  -->
-<span class="green-color"></span>
+    </div>
+    <div class="row mx-0">
+      <span class="green-color col-2 p-0 align-self-center"></span>
       <div v-if="!selectedItem" class="text-muted"></div>
     </div>
 
@@ -266,8 +514,6 @@ IT та телекомунікації (програмування, кіберб
     </div>
   </div>
 </template>
-
-
 
 <script>
 export default {

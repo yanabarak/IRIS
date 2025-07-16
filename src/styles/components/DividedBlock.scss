@@ -1,5 +1,9 @@
 .tree-structure {
+    font-size: 11px;
+    font-weight: bold;
     font-family: monospace;
+    padding-bottom: 0px;
+    letter-spacing: 1px;
 
     span {
         cursor: pointer;
@@ -12,4 +16,13 @@
     .breadcrumb-item.active {
         color: var(--e-global-color-secondar);
     }
+}
+
+.font-monospace {
+    font-size: 11px;
+    font-family: monospace;
+    font-weight: bold;
+    padding-bottom: 0px;
+    letter-spacing: 1.5px;
+
 }
