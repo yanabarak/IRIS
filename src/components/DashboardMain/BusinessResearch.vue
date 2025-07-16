@@ -179,10 +179,13 @@
         <div>
           <ul class="neutral-color pt-0">
             <li class="pl-2 d-block d-md-flex justify-content-between">
-              <router-link to="Ideation">Ideation</router-link>
+              <router-link :to="{ path: '/Ideation' }"> Ideation </router-link>
             </li>
             <li class="pl-2 d-block d-md-flex justify-content-between">
               <router-link to="In_Development">In Development</router-link>
+            </li>
+            <li class="pl-2 d-block d-md-flex justify-content-between">
+              <router-link to="Released">Released</router-link>
             </li>
             <li class="pl-2 d-block d-md-flex justify-content-between">
               <router-link to="Archived">Archived</router-link>

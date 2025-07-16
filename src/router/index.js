@@ -38,6 +38,9 @@ import Browser_Extensions from '@/view/Engineering_Assets/Browser_Extensions.vue
 // R&D
 import Magnetometer from '@/view/R&D/Magnetometer.vue';
 
+// Business Research
+import Ideation from '@/components/Ideation.vue';
+
 // Projects
 // import UserControl from '@/view/Projects/Browser_Extensions/UserControl.vue';
 
@@ -124,6 +127,11 @@ const routes = [
     name: 'Free_Domains',
     component: Free_Domains,
   },
+  {
+    path: '/MarkdownUploader',
+    name: 'MarkdownUploader',
+    component: MarkdownUploader,
+  },
   // Engineering Assets
   {
     path: '/Browser_Extensions',
@@ -136,11 +144,15 @@ const routes = [
     name: 'Magnetometer',
     component: Magnetometer,
   },
+
+  // Business Rsearch
   {
-    path: '/MarkdownUploader',
-    name: 'MarkdownUploader',
-    component: MarkdownUploader,
+    path: '/Ideation',
+    name: 'Ideation',
+    component: Ideation,
   },
+
+  // Projects
   {
     path: '/DividedBlock',
     name: 'DividedBlock',

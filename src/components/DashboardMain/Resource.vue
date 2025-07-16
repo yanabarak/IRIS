@@ -12,9 +12,6 @@
         <div>
           <ul class="neutral-color pt-0">
             <li class="pl-2 d-block d-md-flex justify-content-between">
-              <router-link :to="{ path: '/DividedBlock' }"> DividedBlock </router-link>
-            </li>
-            <li class="pl-2 d-block d-md-flex justify-content-between">
               <router-link :to="{ path: '/MarkdownUploader', query: { key: 'passwords' } }">
                 Passwords manager
               </router-link>
