@@ -20,6 +20,7 @@ import Version_Naming from '@/view/Company_Guidelines/Versioning/Version_Naming.
 import Browser_Extension from '@/view/Company_Guidelines/Documentation_Guidlines/Browser_Extension.vue';
 import Web_Application from '@/view/Company_Guidelines/Documentation_Guidlines/Web_Application.vue';
 import Expansion from '@/view/Company_Guidelines/Documentation_Guidlines/Expansion.vue';
+import InternalTemplates from '@/components/InternalTemplates.vue';
 
 import MarkdownUploader from '@/components/MarkdownUploader.vue';
 
@@ -43,6 +44,8 @@ import Ideation from '@/components/Ideation.vue';
 
 // Projects
 // import UserControl from '@/view/Projects/Browser_Extensions/UserControl.vue';
+import UserControl from '@/components/UserControl.vue';
+
 
 import DividedBlock from '@/components/DividedBlock.vue';
 
@@ -91,6 +94,14 @@ const routes = [
     name: 'Expansion',
     component: Expansion,
   },
+  {
+    path: '/InternalTemplates',
+    name: 'InternalTemplates',
+    component: InternalTemplates,
+  },
+
+
+// Resource
   {
     path: '/JavaScript',
     name: 'JavaScript',
@@ -153,6 +164,11 @@ const routes = [
   },
 
   // Projects
+  {
+    path: '/UserControl',
+    name: 'UserControl',
+    component: UserControl,
+  },
   {
     path: '/DividedBlock',
     name: 'DividedBlock',

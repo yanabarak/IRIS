@@ -53,6 +53,30 @@
           </ul>
         </div>
       </div>
+
+      <div class="block-type col-12">
+        <div class="d-flex gap-2 align-items-center sec-color fs-16">
+          <div class="icons-wrapper">
+            <b-icon icon="journal-text" class="icon-style"></b-icon>
+          </div>
+          Templates & Checklists
+        </div>
+        <div>
+          <ul class="neutral-color pt-0">
+            <li class="pl-2 d-block d-md-flex justify-content-between">
+              <router-link to="InternalTemplates">Internal Templates</router-link>
+            </li>
+            <!-- <li class="pl-2 d-block d-md-flex justify-content-between">
+              <router-link to="Web_Application">Release Checklist</router-link>
+            </li> -->
+            <!-- <li class="pl-2 d-block d-md-flex justify-content-between">
+              <router-link to="API_Documentation">Bug Report Template</router-link>
+            </li> -->
+          </ul>
+        </div>
+      </div>
+
+
       <div class="block-type col-12">
         <div class="d-flex gap-2 align-items-center sec-color fs-16">
           <div class="icons-wrapper">
