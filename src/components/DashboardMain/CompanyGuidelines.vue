@@ -57,7 +57,7 @@
       <div class="block-type col-12">
         <div class="d-flex gap-2 align-items-center sec-color fs-16">
           <div class="icons-wrapper">
-            <b-icon icon="journal-text" class="icon-style"></b-icon>
+            <b-icon icon="file-earmark-break" class="icon-style"></b-icon>
           </div>
           Templates & Checklists
         </div>

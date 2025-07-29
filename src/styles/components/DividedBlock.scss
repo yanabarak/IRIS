@@ -9,7 +9,13 @@
         cursor: pointer;
     }
 }
-
+.third-column{
+    .five-color,
+    .sec-color,
+    .green-color{
+        font-weight: bold;
+    }
+}
 .breadcrumb {
     background-color: var(--neutralColors_700);
 

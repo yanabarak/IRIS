@@ -1,12 +1,12 @@
 <template>
-  <div class="row">
+  <div class="row h-100">
     <div class="col-12 col-md-auto tree-structure">
       <span class="red-color">Company Guidelines / Templates & Checklists / Internal Templates</span><br />
       └── <span class="sec-color" @click="selectItem('Projects_Space')">Projects Space </span><br />
     </div>
 
-    <div class="col mt-3">
-      <div v-if="selectedItem === 'Projects_Space'" class="content">
+    <div class="col mt-3 h-100 overflow-auto">
+      <div v-if="selectedItem === 'Projects_Space'" class="content  tree-structure">
         <b-breadcrumb>
           <b-breadcrumb-item active>/ Projects Space</b-breadcrumb-item>
         </b-breadcrumb>
@@ -61,7 +61,7 @@
       <div v-if="!selectedItem" class="text-muted"></div>
     </div>
 
-    <div class="col mt-3">
+    <div class="col mt-3 third-column h-100 overflow-auto">
       <div v-if="selectedItem2 === 'Concept'" class="content">
         <span class="five-color">Concept</span><br /> Розділ визначає основну ідею та рамки проєкту, надаючи чітке бачення продукту, його межі, цільову аудиторію та унікальну цінність.
       </div>
