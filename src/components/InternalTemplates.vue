@@ -2,60 +2,96 @@
   <div class="row h-100">
     <div class="col-12 col-md-auto tree-structure">
       <span class="red-color">Company Guidelines / Templates & Checklists / Internal Templates</span><br />
-      └── <span class="sec-color" @click="selectItem('Projects_Space')">Projects Space </span><br />
+      ├── <span class="sec-color" @click="selectItem('Business_Research')">Business Research </span><br />
+      └── <span class="sec-color" @click="selectItem('Product_Discovery_Delivery')">Product Discovery & Delivery (PRD)</span><br />
     </div>
 
+
+
     <div class="col mt-3 h-100 overflow-auto">
-      <div v-if="selectedItem === 'Projects_Space'" class="content  tree-structure">
+      <div v-if="selectedItem === 'Business_Research'" class="content  tree-structure">
         <b-breadcrumb>
-          <b-breadcrumb-item active>/ Projects Space</b-breadcrumb-item>
+          <b-breadcrumb-item active>/ Business Research</b-breadcrumb-item>
         </b-breadcrumb>
-        <span class="red-color">Projects Space / Browser Extensions / NameProject </span><br />
-        ├── <span class="five-color pointer-mouse" @click="selectItem2('Concept')">Concept</span><br />
-        │ &nbsp; &nbsp; ├── <span class="sec-color pointer-mouse" @click="selectItem2('Vision_Statement')">Vision Statement</span><br/>
-        │ &nbsp; &nbsp; ├── <span  class="sec-color pointer-mouse" @click="selectItem2('Scope')">Scope</span><br/>
-        │ &nbsp; &nbsp; ├── <span  class="sec-color pointer-mouse" @click="selectItem2('Target_Audience')">Target Audience</span><br/>
-        │ &nbsp; &nbsp; └── <span  class="sec-color pointer-mouse" @click="selectItem2('Unique_Value_Prop')">Unique Value Prop (UVP)</span><br/>
+        <span class="red-color">Business Research</span><br />
+        ├── Market Analysis<br>
+        │ &nbsp; ├── Desktop Software<br>
+        │ &nbsp; ├── Browser Extensions<br>
+        │ &nbsp; ├── Mobile Apps<br>
+        │ &nbsp; └── SaaS Trends<br>
+        ├── Statistics & Data<br>
+        │ &nbsp; ├── Browser Usage<br>
+        │ &nbsp; ├── User Behavior<br>
+        │ &nbsp; ├── Regional Statistics<br>
+        │ &nbsp; └── Market Growth<br>
+        ├── Product Pipeline<br>
+        │ &nbsp; ├── Ideation<br>
+        │ &nbsp; ├── In Development<br>
+        │ &nbsp; ├── Released<br>
+        │ &nbsp; └── Archived<br>
+        ├── Target Audience<br>
+        │ &nbsp; ├── User Personas<br>
+        │ &nbsp; └── Pain Points<br>
+        ├── Monetization Models<br>
+        │ &nbsp; └── Basic<br>
+        ├── Competitive Analysis<br>
+        │ &nbsp; └── Competitor Profiles<br>
+        └── Trends & Opportunities<br>
+          &nbsp; &nbsp; ├── Technology Trends<br>
+          &nbsp; &nbsp; └── Regulatory Impact<br>
+        <br />
+      </div>
+
+      <div v-if="selectedItem === 'Product_Discovery_Delivery'" class="content  tree-structure">
+        <b-breadcrumb>
+          <b-breadcrumb-item active>/ Product Discovery & Delivery</b-breadcrumb-item>
+        </b-breadcrumb>
+        <span class="red-color">Product Discovery & Delivery / Browser Extensions / NameProject </span><br />
+        ├── <span class="five-color pointer-mouse" @click="selectItem2('Concept')">Concept (Product Vision / Introduction)</span><br />
+        │ &nbsp; ├── <span class="sec-color pointer-mouse" @click="selectItem2('Vision_Statement')">Vision Statement</span><br/>
+        │ &nbsp; ├── <span  class="sec-color pointer-mouse" @click="selectItem2('Scope')">Scope</span><br/>
+        │ &nbsp; ├── <span  class="sec-color pointer-mouse" @click="selectItem2('Target_Audience')">Target Audience</span><br/>
+        │ &nbsp; └── <span  class="sec-color pointer-mouse" @click="selectItem2('Unique_Value_Prop')">Unique Value Prop (UVP)</span><br/>
         ├── <span class="five-color pointer-mouse" @click="selectItem2('Requirements')">Requirements</span><br />
-        │ &nbsp; &nbsp; ├── <span  class="sec-color pointer-mouse" @click="selectItem2('Functional_Requirements')">Functional Requirements</span><br/>
-        │ &nbsp; &nbsp; ├── <span  class="sec-color pointer-mouse" @click="selectItem2('Non_Functional')">Non-Functional</span><br/>
-        │ &nbsp; &nbsp; └── <span  class="sec-color pointer-mouse" @click="selectItem2('Regulatory_Requirements')">Regulatory Requirements</span><br/>
+        │ &nbsp; ├── <span  class="sec-color pointer-mouse" @click="selectItem2('Functional_Requirements')">Functional Requirements</span><br/>
+        │ &nbsp; ├── <span  class="sec-color pointer-mouse" @click="selectItem2('Non_Functional')">Non-Functional</span><br/>
+        │ &nbsp; └── <span  class="sec-color pointer-mouse" @click="selectItem2('Regulatory_Requirements')">Regulatory Requirements</span><br/>
         ├── <span class="five-color pointer-mouse" @click="selectItem2('Roadmap_Improvements')">Roadmap & Improvements</span><br />
-        │ &nbsp; &nbsp; ├── <span  class="sec-color pointer-mouse" @click="selectItem2('Product_Roadmap')">Product Roadmap</span><br/>
-        │ &nbsp; &nbsp; └── <span  class="sec-color pointer-mouse" @click="selectItem2('Feature_Prioritization')">Feature Prioritization</span><br/>
+        │ &nbsp; ├── <span  class="sec-color pointer-mouse" @click="selectItem2('Product_Roadmap')">Product Roadmap</span><br/>
+        │ &nbsp; └── <span  class="sec-color pointer-mouse" @click="selectItem2('Feature_Prioritization')">Feature Prioritization</span><br/>
         ├── <span class="five-color pointer-mouse" @click="selectItem2('Monetization_Metrics')">Monetization & Metrics</span><br />
-        │ &nbsp; &nbsp; ├── <span  class="sec-color pointer-mouse" @click="selectItem2('Business_Models')">Business Models</span><br/>
-        │ &nbsp; &nbsp; ├── <span  class="sec-color pointer-mouse" @click="selectItem2('KPIs')">KPIs (Key Performance Indicators)</span><br/>
-        │ &nbsp; &nbsp; ├── <span  class="sec-color pointer-mouse" @click="selectItem2('Pricing_Strategy')">Pricing Strategy</span><br/>
-        │ &nbsp; &nbsp; └── <span  class="sec-color pointer-mouse" @click="selectItem2('Revenue_Projections')">Revenue Projections</span><br/>
+        │ &nbsp; ├── <span  class="sec-color pointer-mouse" @click="selectItem2('Business_Models')">Business Models</span><br/>
+        │ &nbsp; ├── <span  class="sec-color pointer-mouse" @click="selectItem2('KPIs')">KPIs (Key Performance Indicators)</span><br/>
+        │ &nbsp; ├── <span  class="sec-color pointer-mouse" @click="selectItem2('Pricing_Strategy')">Pricing Strategy</span><br/>
+        │ &nbsp; └── <span  class="sec-color pointer-mouse" @click="selectItem2('Revenue_Projections')">Revenue Projections</span><br/>
         ├── <span class="five-color pointer-mouse" @click="selectItem2('Competitive_Analysis')">Competitive Analysis</span><br />
-        │ &nbsp; &nbsp; ├── <span  class="sec-color pointer-mouse" @click="selectItem2('Direct_Competitors')">Direct Competitors</span><br/>
-        │ &nbsp; &nbsp; ├── <span  class="sec-color pointer-mouse" @click="selectItem2('SWOT_Analysis')">SWOT Analysis</span><br/>
-        │ &nbsp; &nbsp; └── <span  class="sec-color pointer-mouse" @click="selectItem2('USP')">Unique Selling Proposition (USP)</span><br/>
+        │ &nbsp; ├── <span  class="sec-color pointer-mouse" @click="selectItem2('Direct_Competitors')">Direct Competitors</span><br/>
+        │ &nbsp; ├── <span  class="sec-color pointer-mouse" @click="selectItem2('SWOT_Analysis')">SWOT Analysis</span><br/>
+        │ &nbsp; └── <span  class="sec-color pointer-mouse" @click="selectItem2('USP')">Unique Selling Proposition (USP)</span><br/>
         ├── <span class="five-color pointer-mouse" @click="selectItem2('Infrastructure_Access')">Infrastructure & Access</span><br />
-        │ &nbsp; &nbsp; ├── <span  class="sec-color pointer-mouse" @click="selectItem2('Server_Access')">Server Access</span><br/>
-        │ &nbsp; &nbsp; ├── <span  class="sec-color pointer-mouse" @click="selectItem2('Security_Policies')">Security Policies</span><br/>
-        │ &nbsp; &nbsp; └── <span  class="sec-color pointer-mouse" @click="selectItem2('Access_Management_Process')">Access Management Process</span><br/>
+        │ &nbsp; ├── <span  class="sec-color pointer-mouse" @click="selectItem2('Server_Access')">Server Access</span><br/>
+        │ &nbsp; ├── <span  class="sec-color pointer-mouse" @click="selectItem2('Security_Policies')">Security Policies</span><br/>
+        │ &nbsp; └── <span  class="sec-color pointer-mouse" @click="selectItem2('Access_Management_Process')">Access Management Process</span><br/>
         ├── <span class="five-color pointer-mouse" @click="selectItem2('Technical_Architecture')">Technical Architecture</span><br />
-        │ &nbsp; &nbsp; ├── <span  class="sec-color pointer-mouse" @click="selectItem2('System_Architecture')">System Architecture</span><br/>
-        │ &nbsp; &nbsp; ├── <span  class="sec-color pointer-mouse" @click="selectItem2('Tech_Stack')">Tech Stack</span><br/>
-        │ &nbsp; &nbsp; └── <span  class="sec-color pointer-mouse" @click="selectItem2('Deployment_Pipeline')">Deployment Pipeline</span><br/>
+        │ &nbsp; ├── <span  class="sec-color pointer-mouse" @click="selectItem2('System_Architecture')">System Architecture</span><br/>
+        │ &nbsp; ├── <span  class="sec-color pointer-mouse" @click="selectItem2('Tech_Stack')">Tech Stack</span><br/>
+        │ &nbsp; └── <span  class="sec-color pointer-mouse" @click="selectItem2('Deployment_Pipeline')">Deployment Pipeline</span><br/>
         ├── <span class="five-color pointer-mouse" @click="selectItem2('Testing_QA')">Testing & QA</span><br />
-        │ &nbsp; &nbsp; ├── <span  class="sec-color pointer-mouse" @click="selectItem2('Test_Plan')">Test Plan</span><br/>
-        │ &nbsp; &nbsp; ├── <span  class="sec-color pointer-mouse" @click="selectItem2('Tools')">Tools</span><br/>
-        │ &nbsp; &nbsp; └── <span  class="sec-color pointer-mouse" @click="selectItem2('Bug_Tracking')">Bug Tracking</span><br/>
+        │ &nbsp; ├── <span  class="sec-color pointer-mouse" @click="selectItem2('Test_Plan')">Test Plan</span><br/>
+        │ &nbsp; ├── <span  class="sec-color pointer-mouse" @click="selectItem2('Tools')">Tools</span><br/>
+        │ &nbsp; └── <span  class="sec-color pointer-mouse" @click="selectItem2('Bug_Tracking')">Bug Tracking</span><br/>
         ├── <span class="five-color pointer-mouse" @click="selectItem2('Market_Strategy')">Go-to-Market Strategy</span><br />
-        │ &nbsp; &nbsp; ├── <span  class="sec-color pointer-mouse" @click="selectItem2('Marketing_Plan')">Marketing Plan</span><br/>
-        │ &nbsp; &nbsp; ├── <span  class="sec-color pointer-mouse" @click="selectItem2('Launch_Plan')">Launch Plan</span><br/>
-        │ &nbsp; &nbsp; └── <span  class="sec-color pointer-mouse" @click="selectItem2('User_Acquisition')">User Acquisition</span><br/>
+        │ &nbsp; ├── <span  class="sec-color pointer-mouse" @click="selectItem2('Marketing_Plan')">Marketing Plan</span><br/>
+        │ &nbsp; ├── <span  class="sec-color pointer-mouse" @click="selectItem2('Launch_Plan')">Launch Plan</span><br/>
+        │ &nbsp; └── <span  class="sec-color pointer-mouse" @click="selectItem2('User_Acquisition')">User Acquisition</span><br/>
         ├── <span class="five-color pointer-mouse" @click="selectItem2('Project_Management')">Project Management</span><br />
-        │ &nbsp; &nbsp; ├── <span  class="sec-color pointer-mouse" @click="selectItem2('Roadmap')">Roadmap</span><br/>
-        │ &nbsp; &nbsp; ├── <span  class="sec-color pointer-mouse" @click="selectItem2('Team_Roles')">Team & Roles</span><br/>
-        │ &nbsp; &nbsp; └── <span  class="sec-color pointer-mouse" @click="selectItem2('Risks')">Risks</span><br/>
+        │ &nbsp; ├── <span  class="sec-color pointer-mouse" @click="selectItem2('Roadmap')">Roadmap</span><br/>
+        │ &nbsp; ├── <span  class="sec-color pointer-mouse" @click="selectItem2('Team_Roles')">Team & Roles</span><br/>
+        │ &nbsp; └── <span  class="sec-color pointer-mouse" @click="selectItem2('Risks')">Risks</span><br/>
         └── <span class="five-color pointer-mouse" @click="selectItem2('Support_Maintenance')">Support & Maintenance</span><br />
-        &nbsp; &nbsp; &nbsp;&nbsp; ├── <span  class="sec-color pointer-mouse" @click="selectItem2('Support_Process')">Support Process</span><br/>
-        &nbsp; &nbsp; &nbsp;&nbsp; ├── <span  class="sec-color pointer-mouse" @click="selectItem2('Update_Schedule')">Update Schedule</span><br/>
-        &nbsp; &nbsp; &nbsp;&nbsp; └── <span  class="sec-color pointer-mouse" @click="selectItem2('Monitoring')">Monitoring</span><br/>
+        &nbsp; &nbsp; ├── <span  class="sec-color pointer-mouse" @click="selectItem2('Support_Process')">Support Process</span><br/>
+        &nbsp; &nbsp; ├── <span  class="sec-color pointer-mouse" @click="selectItem2('Update_Schedule')">Update Schedule</span><br/>
+        &nbsp; &nbsp; └── <span  class="sec-color pointer-mouse" @click="selectItem2('Monitoring')">Monitoring</span><br/>
         <br />
       </div>
       <div v-if="!selectedItem" class="text-muted"></div>
@@ -71,18 +107,17 @@
         <span class="sec-color">Основна ідея продукту:</span> <br> • Що продукт робить і чому існує (наприклад, забезпечення безпечного веб-досвіду).<br><br>
         <span class="sec-color">Довгострокова мета:</span> <br> • Який вплив продукт матиме на користувачів або ринок (наприклад, стати лідером у parental control).<br><br>
         <span class="sec-color">Цінності:</span> <br> • Які принципи лежать в основі продукту (наприклад, простота, доступність, безпека).<br><br>
-        <span class="sec-color">Короткість і чіткість:</span> <br> • Формулювання має бути лаконічним (1–2 речення), щоб легко запам’ятовувалося.<br><br>
-        <span class="sec-color">Посилання на Business Research:</span> <br> • Дані про ринкові потреби з Business Research → Market Analysis → Pain Points.<br> • Тренди з Business Research → Technology Trends.<br><br>
+        <span class="sec-color">Посилання на Business Research:</span> <br> • Дані про ринкові потреби з Business Research → Market Analysis → Product Type →  Customer Needs and Pain Points.<br> • Тренди з Business Research → Trends & Opportunities → Technology Trends.<br><br>
         <span class="green-color">Приклад:</span> <br>
         UserControl empowers parents and businesses to create a safe and productive web environment with a simple, AI-driven Chrome extension, aligning with IRIS_MAN’s mission to deliver accessible, high-impact tools for passive income (Company Guidelines → Mission). Our goal is to become the go-to solution for intuitive web control by 2027, addressing the growing need for online safety (Business Research → Market Analysis → Pain Points).<br><br>
-        <span class="sec-color">Формат:</span> <br>• Посилайтеся на Business Research для обґрунтування ринкової потреби. <br> • Vision Statement узгоджується з C-level або формулюють Person A і Person B спільно.
+        <span class="sec-color">Формат:</span> <br>• Короткість і чіткість: Формулювання має бути лаконічним (1–2 речення), щоб легко запам’ятовувалося.<br>• Посилайтеся на Business Research для обґрунтування ринкової потреби. <br> • Vision Statement узгоджується з C-level або формулюють Person A і Person B спільно.
       </div>
       <div v-if="selectedItem2 === 'Scope'" class="content">
         <span class="five-color">Scope</span><br />
         Мета визначити чіткі межі – що входить у продукт, а що нi (щоб уникнути "feature creep"). <br><br>
         <span class="sec-color">Що входить (In-Scope):</span> <br> • Основні функції (наприклад, блокування сайтів, Vue.js дашборд, Requirements → Functional → FR-001, FR-005).<br> • Платформи (наприклад, Chrome browser).<br> • Ринки (наприклад, US, EU, Business Research → Target Audience). <br> • Початкові релізи (наприклад, v1.0 із базовими функціями).<br><br>
         <span class="sec-color">Що не входить (Out-of-Scope):</span> <br> • Функції, відкладені на майбутнє (наприклад, AI-фільтрація для v2.0, Roadmap & Improvements → Product Roadmap).<br> • Непідтримувані платформи (наприклад, Firefox, мобільні браузери).<br> • Некритичні ринки (наприклад, країни без GDPR).<br><br>
-        <span class="sec-color">Обмеження:</span> <br> • Технічні (наприклад, Firebase free-tier, Resource → Servers → Firebase).<br> • Ресурсні (наприклад, команда з двох осіб).<br> • Часові (наприклад, запуск у Q4 2025, Project Management → Roadmap).<br><br>
+        <span class="sec-color">Обмеження:</span> <br> • Технічні (наприклад, Firebase free-tier, Resource → Servers → Firebase).<br> • Ресурсні (мала команда).<br> • Часові (наприклад, запуск у Q4 2025, Project Management → Roadmap).<br><br>
         <span class="sec-color">Фази розвитку:</span> <br> • Початковий реліз (наприклад, v1.0 із базовим блокуванням).<br> • Майбутні релізи (посилання на Roadmap & Improvements → Product Roadmap).<br><br>
         <span class="sec-color">Посилання на Requirements та Roadmap:</span> <br> • Функції з Requirements → Functional і Non-Functional.<br> • Таймлайн із Project Management → Roadmap.<br><br>
         <span class="green-color">Приклад:</span> <br>

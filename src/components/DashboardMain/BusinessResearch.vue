@@ -15,7 +15,7 @@
               <router-link to="Desktop_Software">Desktop Software</router-link>
             </li>
             <li class="pl-2 d-block d-md-flex justify-content-between">
-              <router-link to="Browser_Extensions">Browser Extensions</router-link>
+              <router-link to="Browser_Extensions_BR">Browser Extensions</router-link>
             </li>
             <li class="pl-2 d-block d-md-flex justify-content-between">
               <router-link to="Mobile_Apps">Mobile Apps</router-link>
@@ -92,7 +92,7 @@
         <div>
           <ul class="neutral-color pt-0">
             <li class="pl-2 d-block d-md-flex justify-content-between">
-              <router-link to="Basic_Monetization">Basic</router-link>
+              <router-link to="Freemium">Freemium</router-link>
             </li>
           </ul>
         </div>
@@ -119,7 +119,7 @@
         <div>
           <ul class="neutral-color pt-0">
             <li class="pl-2 d-block d-md-flex justify-content-between">
-              <router-link to="Emerging_Tech">Emerging Tech</router-link>
+              <router-link to="Technology_Trends">Technology Trends</router-link>
             </li>
             <li class="pl-2 d-block d-md-flex justify-content-between">
               <router-link to="Regulatory_Impact">Regulatory Impact</router-link>

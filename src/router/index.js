@@ -40,7 +40,20 @@ import Browser_Extensions from '@/view/Engineering_Assets/Browser_Extensions.vue
 import Magnetometer from '@/view/R&D/Magnetometer.vue';
 
 // Business Research
+import Desktop_Software from '@/view/Business_Research/Desktop_Software.vue';
+import Browser_Extensions_BR from '@/view/Business_Research/Browser_Extensions_BR.vue';
+import Mobile_Apps from '@/view/Business_Research/Mobile_Apps.vue';
+import SaaS_Trends from '@/view/Business_Research/SaaS_Trends.vue';
+import Browser_Usage from '@/view/Business_Research/Browser_Usage.vue';
+import User_Behavior from '@/view/Business_Research/User_Behavior.vue';
+import Regional_Statistics from '@/view/Business_Research/Regional_Statistics.vue';
+import Market_Growth from '@/view/Business_Research/Market_Growth.vue';
+import User_Personas from '@/view/Business_Research/User_Personas.vue';
+import Pain_Points from '@/view/Business_Research/Pain_Points.vue';
+import Freemium from '@/view/Business_Research/Freemium.vue';
+import Technology_Trends from '@/view/Business_Research/Technology_Trends.vue';
 import Ideation from '@/components/Ideation.vue';
+
 
 // Projects
 // import UserControl from '@/view/Projects/Browser_Extensions/UserControl.vue';
@@ -68,112 +81,57 @@ const routes = [
     name: 'Dashboard',
     component: Dashboard,
   },
+
   // Company Guidelines
-  {
-    path: '/Product',
-    name: 'Product',
-    component: Product,
-  },
-  {
-    path: '/Version_Naming',
-    name: 'Version_Naming',
-    component: Version_Naming,
-  },
-  {
-    path: '/Browser_Extension',
-    name: 'Browser_Extension',
-    component: Browser_Extension,
-  },
-  {
-    path: '/Web_Application',
-    name: 'Web_Application',
-    component: Web_Application,
-  },
-  {
-    path: '/Expansion',
-    name: 'Expansion',
-    component: Expansion,
-  },
-  {
-    path: '/InternalTemplates',
-    name: 'InternalTemplates',
-    component: InternalTemplates,
-  },
+  {path: '/Product', name: 'Product', component: Product,},
+  {path: '/Version_Naming', name: 'Version_Naming', component: Version_Naming,},
+  {path: '/Browser_Extension', name: 'Browser_Extension', component: Browser_Extension,},
+  {path: '/Web_Application', name: 'Web_Application', component: Web_Application,},
+  {path: '/Expansion', name: 'Expansion', component: Expansion,},
+  {path: '/InternalTemplates', name: 'InternalTemplates', component: InternalTemplates,},
 
 
 // Resource
-  {
-    path: '/JavaScript',
-    name: 'JavaScript',
-    component: JavaScript,
-  },
-  {
-    path: '/Python',
-    name: 'Python',
-    component: Python,
-  },
+  {path: '/JavaScript', name: 'JavaScript', component: JavaScript,},
+  {path: '/Python', name: 'Python', component: Python,},
+
+
   // Resource
-  {
-    path: '/Groq',
-    name: 'Groq',
-    component: Groq,
-  },
-  {
-    path: '/List_Server',
-    name: 'List_Server',
-    component: List_Server,
-  },
-  {
-    path: '/Firebase',
-    name: 'Firebase',
-    component: Firebase,
-  },
-  {
-    path: '/Cloud_Run',
-    name: 'Cloud_Run',
-    component: Cloud_Run,
-  },
-  {
-    path: '/Free_Domains',
-    name: 'Free_Domains',
-    component: Free_Domains,
-  },
-  {
-    path: '/MarkdownUploader',
-    name: 'MarkdownUploader',
-    component: MarkdownUploader,
-  },
+  {path: '/Groq', name: 'Groq', component: Groq,},
+  {path: '/List_Server', name: 'List_Server', component: List_Server,},
+  {path: '/Firebase', name: 'Firebase', component: Firebase,},
+  {path: '/Cloud_Run', name: 'Cloud_Run',component: Cloud_Run,},
+  {path: '/Free_Domains', name: 'Free_Domains', component: Free_Domains,},
+  {path: '/MarkdownUploader', name: 'MarkdownUploader', component: MarkdownUploader,},
+
+
   // Engineering Assets
-  {
-    path: '/Browser_Extensions',
-    name: 'Browser_Extensions',
-    component: Browser_Extensions,
-  },
+  {path: '/Browser_Extensions', name: 'Browser_Extensions', component: Browser_Extensions,},
+
+
   // R&D
-  {
-    path: '/Magnetometer',
-    name: 'Magnetometer',
-    component: Magnetometer,
-  },
+  {path: '/Magnetometer', name: 'Magnetometer', component: Magnetometer,},
 
   // Business Rsearch
-  {
-    path: '/Ideation',
-    name: 'Ideation',
-    component: Ideation,
-  },
+  {path: '/Desktop_Software', name: 'Desktop_Software',component: Desktop_Software,},
+  {path: '/Browser_Extensions_BR', name: 'Browser_Extensions_BR', component: Browser_Extensions_BR,},
+  {path: '/Mobile_Apps', name: 'Mobile_Apps', component: Mobile_Apps,},
+  {path: '/Ideation', name: 'Ideation',component: Ideation,},
+  {path: '/SaaS_Trends', name: 'SaaS_Trends', component: SaaS_Trends,},
+  {path: '/Browser_Usage', name: 'Browser_Usage', component: Browser_Usage,},
+  {path: '/User_Behavior', name: 'User_Behavior', component: User_Behavior,},
+  {path: '/Regional_Statistics', name: 'Regional_Statistics', component: Regional_Statistics,},
+  {path: '/Market_Growth', name: 'Market_Growth', component: Market_Growth,},
+  {path: '/User_Personas', name: 'User_Personas', component: User_Personas,},
+  {path: '/Pain_Points', name: 'Pain_Points', component: Pain_Points,},
+  {path: '/Freemium', name: 'Freemium', component: Freemium,},
+  {path: '/Technology_Trends', name: 'Technology_Trends', component: Technology_Trends,},
+
+
 
   // Projects
-  {
-    path: '/UserControl',
-    name: 'UserControl',
-    component: UserControl,
-  },
-  {
-    path: '/DividedBlock',
-    name: 'DividedBlock',
-    component: DividedBlock,
-  },
+  {path: '/UserControl', name: 'UserControl', component: UserControl,},
+  {path: '/DividedBlock', name: 'DividedBlock', component: DividedBlock,},
 
   // {
   //   path: '/UserControl',
