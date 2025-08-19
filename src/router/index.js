@@ -53,6 +53,7 @@ import Pain_Points from '@/view/Business_Research/Pain_Points.vue';
 import Freemium from '@/view/Business_Research/Freemium.vue';
 import Technology_Trends from '@/view/Business_Research/Technology_Trends.vue';
 import Ideation from '@/components/Ideation.vue';
+import Media_Stock from '@/components/Media_Stock.vue';
 
 
 // Projects
@@ -103,6 +104,7 @@ const routes = [
   {path: '/Cloud_Run', name: 'Cloud_Run',component: Cloud_Run,},
   {path: '/Free_Domains', name: 'Free_Domains', component: Free_Domains,},
   {path: '/MarkdownUploader', name: 'MarkdownUploader', component: MarkdownUploader,},
+  {path: '/Media_Stock', name: 'Media_Stock', component: Media_Stock,},
 
 
   // Engineering Assets

@@ -98,10 +98,10 @@
     </div>
 
     <div class="col mt-3 third-column h-100 overflow-auto">
-      <div v-if="selectedItem2 === 'Concept'" class="content">
+      <div v-if="selectedItem2 === 'Concept'" class="content font-monospace">
         <span class="five-color">Concept</span><br /> Розділ визначає основну ідею та рамки проєкту, надаючи чітке бачення продукту, його межі, цільову аудиторію та унікальну цінність.
       </div>
-      <div v-if="selectedItem2 === 'Vision_Statement'" class="content">
+      <div v-if="selectedItem2 === 'Vision_Statement'" class="content font-monospace">
         <span class="five-color">Vision Statemen</span><br />
         Мета сформулювати коротке, бачення продукту, яке відображає його мету, вплив і довгострокові цілі.<br><br>
         <span class="sec-color">Основна ідея продукту:</span> <br> • Що продукт робить і чому існує (наприклад, забезпечення безпечного веб-досвіду).<br><br>
@@ -112,7 +112,7 @@
         UserControl empowers parents and businesses to create a safe and productive web environment with a simple, AI-driven Chrome extension, aligning with IRIS_MAN’s mission to deliver accessible, high-impact tools for passive income (Company Guidelines → Mission). Our goal is to become the go-to solution for intuitive web control by 2027, addressing the growing need for online safety (Business Research → Market Analysis → Pain Points).<br><br>
         <span class="sec-color">Формат:</span> <br>• Короткість і чіткість: Формулювання має бути лаконічним (1–2 речення), щоб легко запам’ятовувалося.<br>• Посилайтеся на Business Research для обґрунтування ринкової потреби. <br> • Vision Statement узгоджується з C-level або формулюють Person A і Person B спільно.
       </div>
-      <div v-if="selectedItem2 === 'Scope'" class="content">
+      <div v-if="selectedItem2 === 'Scope'" class="content font-monospace">
         <span class="five-color">Scope</span><br />
         Мета визначити чіткі межі – що входить у продукт, а що нi (щоб уникнути "feature creep"). <br><br>
         <span class="sec-color">Що входить (In-Scope):</span> <br> • Основні функції (наприклад, блокування сайтів, Vue.js дашборд, Requirements → Functional → FR-001, FR-005).<br> • Платформи (наприклад, Chrome browser).<br> • Ринки (наприклад, US, EU, Business Research → Target Audience). <br> • Початкові релізи (наприклад, v1.0 із базовими функціями).<br><br>
@@ -133,7 +133,7 @@
         Reference: Functional requirements (Requirements → Functional); roadmap (Project Management → Roadmap).<br><br>
         <span class="sec-color">Формат:</span> <br>• Чітко розмежуйте in-scope/out-of-scope, щоб уникнути розростання. <br> • Посилайтеся на Requirements для функцій і Project Management для таймлайну. <br> • Scope фіксується в PRD, Project Space.
       </div>
-      <div v-if="selectedItem2 === 'Target_Audience'" class="content">
+      <div v-if="selectedItem2 === 'Target_Audience'" class="content font-monospace">
         <span class="five-color">Target Audience</span><br />
         Мета описати, хто є основними користувачами продукту, їхні потреби та характеристики, щоб сфокусувати розробку та маркетинг.<br><br>
         <span class="sec-color">Сегменти аудиторії:</span> <br> • Основні групи (наприклад, батьки, HR-менеджери).<br> • Демографія (вік, стать, локація, Business Research → Target Audience).<br><br>
@@ -154,7 +154,7 @@
         Reference: Audience data (Business Research → Target Audience); acquisition channels (Go-to-Market Strategy → User Acquisition).<br><br>
         <span class="sec-color">Формат:</span> <br>• Деталізуйте 2–3 основні сегменти, спираючись на Business Research. <br> • Посилайтеся на Go-to-Market Strategy для поведінки та каналів. <br> • Аудиторія аналізується в CRM (HubSpot) або розділ Business Research.
       </div>
-      <div v-if="selectedItem2 === 'Unique_Value_Prop'" class="content">
+      <div v-if="selectedItem2 === 'Unique_Value_Prop'" class="content font-monospace">
         <span class="five-color">Unique Value Prop (UVP)</span><br />
         Мета описати чим продукт кращий за аналоги – конкретно і вимірно. Описати чим відрізняємось від конкурентів? (швидше, дешевше, простіше, розумніше).<br><br>
         <span class="sec-color">Основна цінність:</span> <br> • Що робить продукт унікальним (наприклад, найпростіший інтерфейс для батьків).<br><br>
@@ -179,7 +179,7 @@
 
 
 
-      <!-- <div v-if="selectedItem2 === 'qwerty'" class="content">
+      <!-- <div v-if="selectedItem2 === 'qwerty'" class="content font-monospace">
         <span class="five-color">qwerty</span><br />
         Мета <br><br>
         <span class="sec-color">qwerty</span> <br> • <br> • <br> • <br><br>
@@ -193,10 +193,10 @@
         <br><br>
         <span class="sec-color">Формат:</span> <br>•  <br> •  <br> •
       </div> -->
-      <div v-if="selectedItem2 === 'Requirements'" class="content">
+      <div v-if="selectedItem2 === 'Requirements'" class="content font-monospace">
         <span class="five-color">Requirements</span><br />визначає, що саме продукт повинен робити, які стандарти продуктивності та якості він має відповідати, і які регуляторні норми необхідно дотримуватися. <br> Цей розділ служить вихідною точкою для для розробки, тестування та відповідності ринковим і юридичним вимогам.
       </div>
-      <div v-if="selectedItem2 === 'Functional_Requirements'" class="content">
+      <div v-if="selectedItem2 === 'Functional_Requirements'" class="content font-monospace">
         <span class="five-color">Functional Requirements</span><br />
         Мета описати конкретні функції, які продукт повинен виконувати, щоб відповідати потребам користувачів, визначеним у Concept. <br><br>
         <span class="sec-color">Список вимог:</span> <br> • Унікальний ідентифікатор (наприклад, FR-001).<br> • Опис функції.<br> • Пріоритет (наприклад, Must Have, Should Have, Nice to Have). <br> • Зв’язок із потребами користувачів (посилання на Concept → Target Audience).<br><br>
@@ -218,7 +218,7 @@
         Reference: User needs (Concept → Target Audience); competitive features (Competitive Analysis → Direct Competitors).<br><br>
         <span class="sec-color">Формат:</span> <br>• Нумеруйте вимоги (FR-001, FR-002) для зручного трекінгу в Jira або Trello (Company Guidelines → Development Workflow). <br>• Використовуйте дієслова дії ("дозволяти", "генерувати") для чіткості. <br>• Посилайтеся на Concept → Target Audience для обґрунтування функцій. <br>• Вимоги деталізуються в PRD і уточнюються під час планування спринтів (Agile).
       </div>
-      <div v-if="selectedItem2 === 'Non_Functional'" class="content">
+      <div v-if="selectedItem2 === 'Non_Functional'" class="content font-monospace">
         <span class="five-color">Non Functional</span><br />
         Мета описати технічні та якісні характеристики продукту, які не пов’язані з конкретними функціями, але впливають на його продуктивність, безпеку, масштабованість тощо. <br><br>
         <span class="sec-color">Продуктивність:</span> Вимоги до швидкості та ефективності. <br><br>
@@ -237,7 +237,7 @@
         NFR-006 (Reliability): Система забезпечує 99.9% uptime на Firebase hosting.<br><br>
         <span class="sec-color">Формат:</span> <br>• Нумеруйте вимоги (NFR-001) для трекінгу. <br>• Використовуйте вимірювані метрики (наприклад, "&lt;100 мс") для перевірки. <br>• Посилайтеся на Resource → Servers для технічних обмежень і Security для вимог безпеки. <br>• Нефункціональні вимоги перевіряються через тести продуктивності (LoadRunner) і безпеки (OWASP), Lighthouse.
       </div>
-      <div v-if="selectedItem2 === 'Regulatory_Requirements'" class="content">
+      <div v-if="selectedItem2 === 'Regulatory_Requirements'" class="content font-monospace">
         <span class="five-color">Regulatory Requirements</span><br />
         Мета визначити юридичні та регуляторні вимоги, яким продукт повинен відповідати. <br><br>
         <span class="sec-color">Регуляторні стандарти:</span> Закони та стандарти, які стосуються продукту. <br> <span class="green-color">Приклад:</span> <br> • GDPR (ЄС) для захисту даних користувачів (Business Research → Regulatory Impact).  <br> • CCPA (Каліфорнія, США) для прав на приватність. <br> • COPPA (США) для захисту дітей до 13 років.  <br><br>
@@ -254,10 +254,10 @@
         <span class="sec-color">Формат:</span> <br>• Нумеруйте вимоги (RR-001) для чіткості. <br>• Використовуйте прості чеклісти (наприклад, GDPR Compliance Checklist) для перевірки. <br>• Посилайтеся на Business Research → Regulatory Impact для деталей регуляцій. <br>• Регуляторні вимоги перевіряються юридичним відділом або використовуються онлайн-ресурси (наприклад, GDPR.eu) або консультант для перевірки.
       </div>
 
-      <div v-if="selectedItem2 === 'Roadmap_Improvements'" class="content">
+      <div v-if="selectedItem2 === 'Roadmap_Improvements'" class="content font-monospace">
         <span class="five-color">Roadmap & Improvements</span><br />Визначає план розвитку продукту, включаючи майбутні функції, оновлення та пріоритизацію завдань. Він допомагає команді (у вашому випадку — двом особам) зрозуміти, куди рухається проєкт, і як він буде вдосконалюватися після релізу.
       </div>
-      <div v-if="selectedItem2 === 'Product_Roadmap'" class="content">
+      <div v-if="selectedItem2 === 'Product_Roadmap'" class="content font-monospace">
         <span class="five-color">Product Roadmap</span><br />
         Мета надати чіткий план розвитку продукту на коротко- та середньострокову перспективу, визначаючи ключові етапи (релізи) та функції, які будуть додані. Це допомагає синхронізувати команду та орієнтуватися на цілі, визначені в Concept. <br><br>
         <span class="sec-color">Часова шкала:</span> Основні етапи розвитку продукту з датами або періодами (наприклад, Q3 2025, Q4 2025). <br> <span class="green-color">Приклад:</span> <br> • v1.0: Базова версія з фільтрацією сайтів за категоріями.  <br> • v1.1: Додавання таймера для обмеження доступу. <br> • v2.0: Впровадження AI для аналізу контенту в реальному часі. <br><br>
@@ -284,7 +284,7 @@
         • Success Metrics: 50,000 installs, 85% user satisfaction.<br><br>
         <span class="sec-color">Формат:</span> <br>• Використовуйте часові періоди (квартали) замість точних дат для гнучкості. <br>• Нумеруйте релізи (v1.0, v1.1) для відповідності Company Guidelines → Versioning. <br>• Посилайтеся на Requirements → Functional Requirements для функцій і Business Research для ринкових даних. <br>• Roadmap візуалізується в Jira або Confluence (наприклад, Gantt chart); для IRIS використовуйте таблицю на Vue.js-порталі або Trello.
       </div>
-      <div v-if="selectedItem2 === 'Feature_Prioritization'" class="content">
+      <div v-if="selectedItem2 === 'Feature_Prioritization'" class="content font-monospace">
         <span class="five-color">Feature Prioritization</span><br />
         Мета: Визначити, які функції чи вдосконалення реалізовувати першими, на основі їхньої цінності для користувачів, технічної складності та ринкових потреб. Це допомагає ефективно розподілити ресурси. <br><br>
         <span class="sec-color">Методика пріоритизації:</span> Метод, який використовується для оцінки функцій. <br> <span class="green-color">Приклад:</span> <br> • MoSCoW: Must have, Should have, Could have, Won’t have.  <br> • ICE: Impact (вплив на користувачів), Confidence (впевненість у успіху), Ease (легкість реалізації).  <br><br>
@@ -315,10 +315,10 @@
         <span class="sec-color">Формат:</span> <br>• Нумеруйте функції, посилаючись на Functional Requirements (FR-001). <br>• Оновлюйте пріоритети після кожного спринту (Company Guidelines → Development Workflow.
       </div>
 
-      <div v-if="selectedItem2 === 'Monetization_Metrics'" class="content">
+      <div v-if="selectedItem2 === 'Monetization_Metrics'" class="content font-monospace">
         <span class="five-color">Monetization & Metrics</span><br />Визначає, як проєкт зароблятиме гроші та як вимірюватиметься його успіх. Використовується для планування доходів, оцінки ринкового потенціалу та відстеження прогресу.
       </div>
-      <div v-if="selectedItem2 === 'Business_Models'" class="content">
+      <div v-if="selectedItem2 === 'Business_Models'" class="content font-monospace">
         <span class="five-color">Business Models</span><br />
         Мета описати, які моделі монетизації використовуватимуться для продукту, щоб забезпечити дохід, враховуючи ринкові тренди та потреби аудиторії. <br><br>
         <span class="sec-color">Типи моделей монетизації:</span> Перелік моделей, які підходять для продукту, з обґрунтуванням. <br> <span class="green-color">Приклад:</span> <br> • Freemium: Безкоштовна базова версія з платними преміум-функціями (наприклад, таймер, AI-фільтрація).  <br> • Subscription: Щомісячна/річна підписка за доступ до всіх функцій. <br> • One-time Purchase: Разова оплата за lifetime-доступ (менш популярна, але можлива). <br>
@@ -343,7 +343,7 @@
         Market Fit: Freemium drives adoption, subscriptions ensure recurring revenue (Monetization Models → Basic).<br><br>
         <span class="sec-color">Формат:</span> <br>• Вибирайте 2–3 моделі для простоти реалізації (наприклад, freemium + subscription). <br>• Посилайтеся на Business Research → Monetization Models і Competitive Analysis для даних. <br>• моделі тестуються через A/B тестування (наприклад, різні ціни).
       </div>
-      <div v-if="selectedItem2 === 'KPIs'" class="content">
+      <div v-if="selectedItem2 === 'KPIs'" class="content font-monospace">
         <span class="five-color">KPIs</span><br />
         Мета визначити метрики, які вимірюватимуть успіх продукту з точки зору монетизації та користувацької активності, щоб відстежувати прогрес. <br><br>
         <span class="sec-color">Метрики монетизації:</span> <br> • Monthly Recurring Revenue (MRR): Місячний дохід від підписок. <br> • Conversion Rate: Відсоток користувачів, які переходять із freemium на преміум. <br> • Average Revenue Per User (ARPU): Середній дохід на користувача. <br><br>
@@ -368,7 +368,7 @@
         Market Fit: High retention aligns with user need for safety (74%, Statistics & Data → User Behavior).<br><br>
         <span class="sec-color">Формат:</span> <br>• Вибирайте 5–7 метрик для простоти відстеження. <br>• Посилайтеся на Concept → Success Metrics для узгодженості. <br>• KPI відстежуються в Mixpanel або Tableau.
       </div>
-      <div v-if="selectedItem2 === 'Pricing_Strategy'" class="content">
+      <div v-if="selectedItem2 === 'Pricing_Strategy'" class="content font-monospace">
         <span class="five-color">Pricing Strategy</span><br />
         Мета визначити, як ціноутворюватимете продукт, щоб максимізувати дохід і конкурувати на ринку, враховуючи аудиторію та конкурентів. <br><br>
         <span class="sec-color">Цінові плани:</span>Деталі для кожної моделі монетизації. <br> <span class="green-color">Приклад:</span> <br> • Freemium: Безкоштовно з базовими функціями; $5/міс за преміум. <br> • Subscription: $50/рік (17% знижка). <br><br>
@@ -388,7 +388,7 @@
         Market Fit: Affordable pricing aligns with small business HR budgets (Target Audience → User<br><br>
         <span class="sec-color">Формат:</span> <br>• Посилайтеся на Competitive Analysis для порівняння цін. <br>• ціни тестуються через аналітику Mixpanel, Stripe Analytics.
       </div>
-      <div v-if="selectedItem2 === 'Revenue_Projections'" class="content">
+      <div v-if="selectedItem2 === 'Revenue_Projections'" class="content font-monospace">
         <span class="five-color">Revenue Projections</span><br />
         Спрогнозувати потенційний дохід від продукту на основі моделей монетизації, цінової стратегії та ринкових даних, щоб оцінити фінансову життєздатність. <br><br>
         <span class="sec-color">Прогнози доходу:</span>Очікуваний дохід за періодами (наприклад, Q3 2025, Q4 2025), з розбивкою за моделями. <br> <span class="green-color">Приклад:</span> <br> • Q4 2025: $5,000 MRR (1,000 premium users × $5/міс). <br> • Q1 2026: $15,000 MRR (3,000 premium users). <br><br>
@@ -417,10 +417,10 @@
         <span class="sec-color">Формат:</span> <br>• Використовуйте реалістичні припущення, базуючись на Business Research. <br> • Враховуйте витрати для точних прогнозів (Firebase, Stripe). <br> • Прогнози створюються в Excel/Tableau, Google Sheets або таблицю на порталі.
       </div>
 
-      <div v-if="selectedItem2 === 'Competitive_Analysis'" class="content">
+      <div v-if="selectedItem2 === 'Competitive_Analysis'" class="content font-monospace">
         <span class="five-color">Competitive Analysis</span><br />Розділ Competitive Analysis потрібен, щоб оцінити позицію продукту на ринку відносно конкурентів, визначити їхні сильні та слабкі сторони, а також сформулювати унікальну цінність продукту.
       </div>
-      <div v-if="selectedItem2 === 'Direct_Competitors'" class="content">
+      <div v-if="selectedItem2 === 'Direct_Competitors'" class="content font-monospace">
         <span class="five-color">Direct Competitors</span><br />
         Мета визначити основних конкурентів, які пропонують схожі продукти чи послуги для тієї ж цільової аудиторії, щоб зрозуміти їхні пропозиції, ринкову позицію та стратегії. <br><br>
         <span class="sec-color">Список конкурентів:</span> Назви компаній/продуктів, які є прямими конкурентами. <br><br>
@@ -460,7 +460,7 @@
         <span class="sec-color">Формат:</span> <br>• Обмежтеся 2–4 конкурентами для простоти аналізу (NetNanny, Qustodio, Bark). <br> • Використовуйте SEO-інструменти (MozBar, Ahrefs, Resource → SEO Tools) для аналізу сайтів конкурентів. <br> • Аналізуйте відгуки в Chrome Web Store для слабких сторін (наприклад, скарги на складність Qustodio). <br>
          • Посилайтеся на Business Research → Competitive Analysis для загальних даних і Market Analysis для ринкових трендів.<br> • Конкуренти аналізуються щорічно через інструменти, як Semrush, MozBar.
       </div>
-      <div v-if="selectedItem2 === 'SWOT_Analysis'" class="content">
+      <div v-if="selectedItem2 === 'SWOT_Analysis'" class="content font-monospace">
         <span class="five-color">SWOT Analysis</span><br />
         Мета провести аналіз сильних і слабких сторін продукту та конкурентів, а також оцінити можливості й загрози на ринку, щоб визначити стратегічні пріоритети. <br><br>
         <span class="sec-color">Strengths:</span> <br> <span class="green-color">Приклад:</span> <br> • Для Our product: Унікальні переваги продукту (наприклад, простота one-click налаштування, GDPR-сумісність).<br> • Для конкурентів: Їхні сильні сторони з Direct Competitors (наприклад, сильний бренд NetNanny).<br><br>
@@ -477,7 +477,7 @@
         <span class="sec-color">Формат:</span> <br>• Створюйте окрему SWOT-матрицю лише для Our product, а для конкурентів надайте короткий текстовий опис, щоб уникнути перевантаження. <br> • Використовуйте дані з Direct Competitors для заповнення SWOT конкурентів. <br> •Посилайтеся на Trends & Opportunities для можливостей і Statistics & Data → Regulatory Impact для загроз. <br>
          • SWOT візуалізується в Confluence або Markdown-таблицю на Internal-portal.
       </div>
-      <div v-if="selectedItem2 === 'USP'" class="content">
+      <div v-if="selectedItem2 === 'USP'" class="content font-monospace">
         <span class="five-color">Unique Selling Proposition (USP)</span><br />
         Мета сформулювати унікальну ціннісну пропозицію UserControl, яка відрізнить продукт від конкурентів і приверне увагу цільової аудиторії. <br><br>
         <span class="sec-color">Основна пропозиція:</span> Коротке формулювання USP (1–2 речення), яке відповідає на питання: "Чому користувачі оберуть NameProject замість конкурентів? <br> <span class="green-color">Приклад:</span> <br> • "Найпростіше AI-розширення для батьківського та корпоративного контролю з one-click налаштуванням і GDPR-сумісністю."<br><br>
@@ -499,10 +499,10 @@
         <span class="sec-color">Формат:</span> <br>• Формулюйте USP коротко і конкретно, уникаючи загальних фраз (наприклад, "найкращий сервіс"). <br> • Порівнюйте з конкурентами, використовуючи дані з Direct Competitors і SWOT Analysis. <br> • Тестуйте USP через відгуки в Chrome Web Store після запуску (Company Guidelines → Development Workflow → Feedback Loop).
       </div>
 
-      <div v-if="selectedItem2 === 'Infrastructure_Access'" class="content">
+      <div v-if="selectedItem2 === 'Infrastructure_Access'" class="content font-monospace">
         <span class="five-color">Infrastructure & Access</span><br /> Описує технічну інфраструктуру, необхідну для роботи продукту (NameProject), а також політики та процеси, що забезпечують безпечний доступ до серверів і даних для хостингу та управління даними, цей розділ є критично важливим, щоб гарантувати безпеку, відповідність регуляторним вимогам.
       </div>
-      <div v-if="selectedItem2 === 'Server_Access'" class="content">
+      <div v-if="selectedItem2 === 'Server_Access'" class="content font-monospace">
         <span class="five-color">Server Access</span><br />
         Мета визначити, які сервери або хмарні сервіси використовуються для проєкту, хто має до них доступ, і як цей доступ налаштований, щоб забезпечити безпечну та ефективну роботу продукту. <br><br>
         <span class="sec-color">Список серверів/сервісів:</span> Перелік хмарних або фізичних серверів, які використовуються для проєкту. <br> <span class="green-color">Приклад:</span> <br> • Назва сервісу (наприклад, Firebase Firestore, Firebase Hosting). <br> • Призначення (наприклад, хостинг дашборда, зберігання даних користувачів).<br><br>
@@ -533,7 +533,7 @@
         Reference: Firebase free-tier limits (10K users, Resource → Servers → Firebase); secure access practices (Company Guidelines → Security → Secure Coding Practices).<br><br>
         <span class="sec-color">Формат:</span> <br>• Вказуйте лише проєктно-специфічні сервіси (Firebase для NameProject), уникаючи загальних деталей із Resource → Servers. <br> • Використовуйте унікальні ідентифікатори для ролей (email), але не розкривайте паролі чи токени. <br> • Посилайтеся на Resource → Servers для технічних лімітів і Company Guidelines → Security для стандартів.
       </div>
-      <div v-if="selectedItem2 === 'Security_Policies'" class="content">
+      <div v-if="selectedItem2 === 'Security_Policies'" class="content font-monospace">
         <span class="five-color">Security Policies</span><br />
         Мета описати політики безпеки, які застосовуються до інфраструктури та даних проєкту, щоб забезпечити захист користувацької інформації та відповідність регуляторним вимогам. <br><br>
         <span class="sec-color">Політики захисту даних:</span> <br> • Шифрування даних (наприклад, AES-256 для даних у Firestore).<br> • Анонімізація даних (наприклад, історія перегляду не прив’язується до особи без згоди). <br><br>
@@ -566,7 +566,7 @@
         Reference: GDPR/CCPA policies (Requirements → Regulatory); Firebase security setup (Resource → Servers → Firebase).<br><br>
         <span class="sec-color">Формат:</span> <br>• Фокусуйтеся на проєктно-специфічних політиках (Firebase для UserControl), уникаючи повторення Company Guidelines → Security. <br> • Вказуйте конкретні інструменти (OWASP ZAP) і регуляції (GDPR). <br> • Політики безпеки  деталізуються в SOC 2 або ISO 27001. Або прості чеклісти GDPR.eu.
       </div>
-      <div v-if="selectedItem2 === 'Access_Management_Process'" class="content">
+      <div v-if="selectedItem2 === 'Access_Management_Process'" class="content font-monospace">
         <span class="five-color">Access Management Process</span><br />
         Мета описати процес надання, зміни та скасування доступу до інфраструктури проєкту, щоб забезпечити контроль і безпеку.<br><br>
         <span class="sec-color">Процес надання доступу:</span> <br> • Хто може запросити доступ.<br> • Як подавати запит (наприклад, через email до Owner).<br> • Схвалення (наприклад, Owner підтверджує через Firebase IAM).<br><br>
@@ -599,10 +599,10 @@
         <span class="sec-color">Формат:</span> <br>• Вкажіть чіткі ролі (Owner, Editor) і інструменти (1Password).<br> • Посилайтеся на Company Guidelines → Team Collaboration для загальних процесів.<br> • IAM-система (Okta); Firebase IAM
       </div>
 
-      <div v-if="selectedItem2 === 'Technical_Architecture'" class="content">
+      <div v-if="selectedItem2 === 'Technical_Architecture'" class="content font-monospace">
         <span class="five-color">Technical Architecture</span><br /> описує технічну основу продукту (UserControl), включаючи структуру системи, технологічний стек і процес розгортання. Розділ є ключовим для забезпечення масштабованості, безпеки та ефективної розробки.
       </div>
-      <div v-if="selectedItem2 === 'System_Architecture'" class="content">
+      <div v-if="selectedItem2 === 'System_Architecture'" class="content font-monospace">
         <span class="five-color">System Architecture</span><br />
         Мета надати огляд архітектури системи, описуючи компоненти, їхню взаємодію та потоки даних, щоб забезпечити розуміння, як продукт функціонує на технічному рівні.<br><br>
         <span class="sec-color">Компоненти системи:</span> Перелік основних модулів або сервісів, які складають продукт. <br> • Браузерне розширення (Chrome extension).<br> • Бекенд (Firebase Firestore/Functions).<br> • AI API (планується для v2.0, Roadmap & Improvements → Product Roadmap).<br><br>
@@ -642,7 +642,7 @@
         Reference: Firebase limits (Resource → Servers → Firebase); performance requirements (Requirements → Non-Functional).<br><br>
         <span class="sec-color">Формат:</span> <br>• Описуйте лише проєктно-специфічні компоненти, посилаючись на Resource → Servers для загальних деталей.<br> • Посилайтеся на Requirements → Non-Functional для продуктивності та безпеки.<br> •
       </div>
-      <div v-if="selectedItem2 === 'Tech_Stack'" class="content">
+      <div v-if="selectedItem2 === 'Tech_Stack'" class="content font-monospace">
         <span class="five-color">Tech_Stack</span><br />
         Мета перелічити технології, бібліотеки та інструменти, які використовуються для розробки, тестування та підтримки продукту, щоб забезпечити чітке розуміння технічної бази.<br><br>
         <span class="sec-color">Фронтенд:</span> <br> • Технології для клієнтської частини.<br> • Бібліотеки.<br><br>
@@ -684,7 +684,7 @@
         Reference: Firebase setup (Resource → Servers → Firebase); coding standards (Company Guidelines → Development Workflow).<br><br>
         <span class="sec-color">Формат:</span> <br>• Вказуйте конкретні версії (Vue.js 3.2) для відтворюваності. <br> • Обґрунтовуйте вибір, посилаючись на Resource → Frameworks або Business Research. <br> •
       </div>
-      <div v-if="selectedItem2 === 'Deployment_Pipeline'" class="content">
+      <div v-if="selectedItem2 === 'Deployment_Pipeline'" class="content font-monospace">
         <span class="five-color">Deployment Pipeline</span><br />
         Мета описати процес розгортання продукту, включаючи автоматизацію, інструменти та етапи, щоб забезпечити швидке й надійне оновлення.<br><br>
         <span class="sec-color">Етапи розгортання:</span> <br> • Підготовка (наприклад, збірка Vue.js, пакування розширення).<br> • Тестування (автоматизовані тести, ручне QA).<br> • Розгортання (публікація в Chrome Web Store, Firebase Hosting).<br><br>
@@ -727,10 +727,10 @@
       </div>
 
 
-      <div v-if="selectedItem2 === 'Testing_QA'" class="content">
+      <div v-if="selectedItem2 === 'Testing_QA'" class="content font-monospace">
         <span class="five-color">Testing & QA</span><br /> Описує підхід до тестування та забезпечення якості продукту, включаючи план тестування, інструменти та процес відстеження помилок. Розділ є критично важливим для забезпечення стабільності, безпеки та відповідності вимогам
       </div>
-      <div v-if="selectedItem2 === 'Test_Plan'" class="content">
+      <div v-if="selectedItem2 === 'Test_Plan'" class="content font-monospace">
         <span class="five-color">Test Plan</span><br />
         Мета описати стратегію та процес тестування продукту, щоб переконатися, що він відповідає функціональним (Requirements → Functional) і нефункціональним вимогам (Requirements → Non-Functional), а також забезпечує високу якість для користувачів. <br><br>
         <span class="sec-color">Типи тестування:</span> <br> • Unit Testing: Тестування окремих компонентів.<br> • Integration Testing: Перевірка взаємодії компонентів.<br> • End-to-End (E2E) Testing: Перевірка повного користувацького сценарію. <br> • Security Testing: Перевірка безпеки<br> • Performance Testing: Перевірка швидкості<br> • Usability Testing: Оцінка зручності UI<br><br>
@@ -774,7 +774,7 @@
         Reference: Test standards (Company Guidelines → Development Workflow → Testing and Quality Assurance); requirements (Requirements → Functional, Non-Functional).<br><br>
         <span class="sec-color">Формат:</span> <br>• Посилайтеся на Requirements для тестів і Company Guidelines для стандартів. <br> • Тест-план деталізується в TestRail або Project Space <br> •
       </div>
-      <div v-if="selectedItem2 === 'Tools'" class="content">
+      <div v-if="selectedItem2 === 'Tools'" class="content font-monospace">
         <span class="five-color">Tools</span><br />
         Мета перелічити інструменти для тестування та QA, щоб забезпечити ефективне виконання тест-плану та відстеження якості.<br><br>
         <span class="sec-color">Інструменти для тестування:</span> <br> • Unit Testing.<br> • Integration Testing.<br> • E2E Testing.<br> • Security Testing.<br> • Performance Testing.<br> • Usability Testing.<br><br>
@@ -807,7 +807,7 @@
         Reference: Tool setup (Resource → Security Tools); testing standards (Company Guidelines → Development Workflow → Testing and Quality Assurance).<br><br>
         <span class="sec-color">Формат:</span> <br>• Посилайтеся на Resource → Security Tools для безпеки та Technical Architecture для CI/CD.<br> •  Використовується TestRail, Selenium, Jest, Cypress.
       </div>
-      <div v-if="selectedItem2 === 'Bug_Tracking'" class="content">
+      <div v-if="selectedItem2 === 'Bug_Tracking'" class="content font-monospace">
         <span class="five-color">Bug Tracking</span><br />
         Мета описати процес виявлення, документування та виправлення помилок, щоб забезпечити швидке реагування та високу якість продукту.<br><br>
         <span class="sec-color">Процес виявлення:</span> <br> • Як виявляються баги (автоматизовані тести, користувацькі відгуки, Crashlytics).<br> • Джерела (наприклад, Chrome Web Store, Firebase Crashlytics).<br><br>
@@ -846,10 +846,10 @@
       </div>
 
 
-      <div v-if="selectedItem2 === 'Market_Strategy'" class="content">
+      <div v-if="selectedItem2 === 'Market_Strategy'" class="content font-monospace">
         <span class="five-color">Go-to-Market Strategy</span><br /> Описує план виведення продукту (UserControl) на ринок, включаючи маркетингові стратегії, план запуску та методи залучення користувачів. Розділ є ключовим для просування продукту до цільової аудиторії.
       </div>
-      <div v-if="selectedItem2 === 'Marketing_Plan'" class="content">
+      <div v-if="selectedItem2 === 'Marketing_Plan'" class="content font-monospace">
         <span class="five-color">Marketing Plan</span><br />
         Мета описати маркетингові стратегії та канали для просування продукту, щоб підвищити впізнаваність і залучити цільову аудиторію.<br><br>
         <span class="sec-color">Цільова аудиторія:</span> <br> • Опис сегментів.<br> • Потреби та больові точки.<br><br>
@@ -879,7 +879,7 @@
         Reference: Audience data (Business Research → Target Audience); metrics (Monetization & Metrics → KPIs).<br><br>
         <span class="sec-color">Формат:</span> <br>• Використовуйте USP із Competitive Analysis для меседжів. <br> • Посилайтеся на Business Research → Market Analysis для трендів і Monetization & Metrics для метрик. <br> • Маркетинг планується в HubSpot, Google Ads, Medium.
       </div>
-      <div v-if="selectedItem2 === 'Launch_Plan'" class="content">
+      <div v-if="selectedItem2 === 'Launch_Plan'" class="content font-monospace">
         <span class="five-color">Launch Plan</span><br />
         Мета описати стратегію та кроки для офіційного запуску продукту, щоб забезпечити успішний вихід на ринок і залучення перших користувачів. <br><br>
         <span class="sec-color">Таймлайн запуску:</span> <br> • Основні етапи (наприклад, бета-тестування, офіційний реліз).<br> • Дати (наприклад, бета в Q3 2025, реліз у Q4 2025, Roadmap & Improvements → Product Roadmap).<br><br>
@@ -908,7 +908,7 @@
         Reference: Release timeline (Roadmap & Improvements → Product Roadmap); testing status (Testing & QA → Test Plan).<br><br>
         <span class="sec-color">Формат:</span> <br>• Плануйте м’який запуск для збору зворотного зв’язку. <br> • Посилайтеся на Monetization & Metrics → Pricing Strategy для промо-акцій. <br> • Запуск планується в Asana, Trello.
       </div>
-      <div v-if="selectedItem2 === 'User_Acquisition'" class="content">
+      <div v-if="selectedItem2 === 'User_Acquisition'" class="content font-monospace">
         <span class="five-color">User Acquisition</span><br />
         Мета описати стратегії залучення користувачів, щоб досягти цільових показників встановлень і конверсій, з фокусом на цільову аудиторію.<br><br>
         <span class="sec-color">Стратегії залучення:</span> <br> • Органічні (SEO, Chrome Web Store, соціальні мережі).<br> • Платні (Google Ads, спонсорські пости).<br> • Партнерства.<br><br>
@@ -939,10 +939,10 @@
       </div>
 
 
-      <div v-if="selectedItem2 === 'Project_Management'" class="content">
+      <div v-if="selectedItem2 === 'Project_Management'" class="content font-monospace">
         <span class="five-color">Project Management</span><br /> Описує організацію та управління проєктом (UserControl), включаючи план розробки, розподіл ролей у команді та управління ризиками. Розділ є ключовим для координації зусиль, дотримання термінів і мінімізації ризиків.
       </div>
-      <div v-if="selectedItem2 === 'Roadmap'" class="content">
+      <div v-if="selectedItem2 === 'Roadmap'" class="content font-monospace">
         <span class="five-color">Roadmap</span><br />
         Мета описати ключові етапи та терміни розробки, тестування, запуску та подальшого розвитку продукту, щоб забезпечити чіткий план виконання проєкту.<br><br>
         <span class="sec-color">Ключові етапи (milestones):</span> <br> • Основні фази проєкту (наприклад, планування, розробка, тестування, бета-запуск, повний запуск).<br> • Конкретні завдання (наприклад, "Розробка Chrome extension", "Налаштування Firebase").<br><br>
@@ -968,7 +968,7 @@
         Reference: Detailed roadmap (Roadmap & Improvements → Product Roadmap); launch details (Go-to-Market Strategy → Launch Plan).<br><br>
         <span class="sec-color">Формат:</span> <br>• Синхронізуйте roadmap із Roadmap & Improvements і Go-to-Market Strategy, щоб уникнути дублювання. <br> • Використовуйте чіткі дати (наприклад, Q3 2025) і прив’язку до вимог (FR-001). <br> • Roadmap ведеться у Jira, Project Space
       </div>
-      <div v-if="selectedItem2 === 'Team_Roles'" class="content">
+      <div v-if="selectedItem2 === 'Team_Roles'" class="content font-monospace">
         <span class="five-color">Team & Roles</span><br />
         Мета описати склад команди, їхні ролі та обов’язки, щоб забезпечити чіткий розподіл завдань і ефективну співпрацю.<br><br>
         <span class="sec-color">Склад команди:</span> <br> • Хто входить до команди.<br> • Контакти.<br><br>
@@ -1001,7 +1001,7 @@
         Reference: Collaboration process (Company Guidelines → Team Collaboration); tools (Resource → Project Management).<br><br>
         <span class="sec-color">Формат:</span> <br>• Вкажіть чіткі ролі для двох осіб, уникаючи перевантаження. <br> • Посилайтеся на Company Guidelines → Team Collaboration для процесів. <br> • Ролі фіксуються в Jira, Trello.
       </div>
-      <div v-if="selectedItem2 === 'Risks'" class="content">
+      <div v-if="selectedItem2 === 'Risks'" class="content font-monospace">
         <span class="five-color">Risks</span><br />
         Мета визначити потенційні ризики для проєкту, оцінити їхній вплив і запропонувати способи їх пом’якшення, щоб мінімізувати затримки чи невдачі.<br><br>
         <span class="sec-color">Список ризиків:</span> <br> • Технічні (наприклад, збої Firebase, Technical Architecture → System Architecture).<br> • Операційні (наприклад, затримки через обмежену команду).<br> • Ринкові (наприклад, низька конверсія, Monetization & Metrics → KPIs). <br> • Регуляторні (наприклад, відхилення Chrome Web Store, Business Research → Statistics & Data → Regulatory Impact).<br><br>
@@ -1027,10 +1027,10 @@
       </div>
 
 
-      <div v-if="selectedItem2 === 'Support_Maintenance'" class="content">
+      <div v-if="selectedItem2 === 'Support_Maintenance'" class="content font-monospace">
         <span class="five-color">Support & Maintenance</span><br /> Описує процеси підтримки користувачів, розклад оновлень і моніторинг продукту після запуску, щоб забезпечити стабільну роботу, задоволеність користувачів і відповідність вимогам (Requirements → Non-Functional. Розділ є ключовим для управління зворотним зв’язком, виправлення помилок і підтримки масштабованості.
       </div>
-      <div v-if="selectedItem2 === 'Support_Process'" class="content">
+      <div v-if="selectedItem2 === 'Support_Process'" class="content font-monospace">
         <span class="five-color">Support Process</span><br />
         Мета описати, як IRIS оброблятиме запити користувачів, вирішуватиме проблеми та надаватиме підтримку, щоб забезпечити позитивний користувацький досвід і відповідність регуляторним вимогам (наприклад, GDPR, Requirements → Regulatory → RR-001).<br><br>
         <span class="sec-color">Канали підтримки:</span> <br> • Як користувачі звертаються за допомогою (наприклад, email, форма в Chrome Web Store, Twitter/X).<br> • Основний контакт (наприклад, support@iris.com).br><br>
@@ -1063,7 +1063,7 @@
         Reference: Support guidelines (Company Guidelines → Team Collaboration → Customer Support Guidelines); bug tracking (Testing & QA → Bug Tracking).<br><br>
         <span class="sec-color">Формат:</span> <br>• Встановіть чіткі SLA (24 години для критичних). <br> • Посилайтеся на Testing & QA → Bug Tracking для технічних проблем. <br> • Підтримка ведеться в Zendesk,Trello та email.
       </div>
-      <div v-if="selectedItem2 === 'Update_Schedule'" class="content">
+      <div v-if="selectedItem2 === 'Update_Schedule'" class="content font-monospace">
         <span class="five-color">Update Schedule</span><br />
         Мета описати графік випуску оновлень для продукту, щоб забезпечити регулярне вдосконалення, виправлення помилок і впровадження нових функцій.<br><br>
         <span class="sec-color">Частота оновлень:</span> <br> • Регулярні оновлення (наприклад, щомісяця для патчів, щокварталу для фіч).<br> • Позапланові оновлення (наприклад, для критичних багів).<br><br>
@@ -1090,7 +1090,7 @@
         Reference: Feature roadmap (Roadmap & Improvements → Product Roadmap); deployment process (Technical Architecture → Deployment Pipeline).<br><br>
         <span class="sec-color">Формат:</span> <br>• Використовуйте автоматизацію (GitHub Actions) для спрощення. <br> • Посилайтеся на Testing & QA → Test Plan для тестування. <br> • Оновлення плануються в Jira, Trello.
       </div>
-      <div v-if="selectedItem2 === 'Monitoring'" class="content">
+      <div v-if="selectedItem2 === 'Monitoring'" class="content font-monospace">
         <span class="five-color">Monitoring</span><br />
         Мета описати, як відстежується продуктивність, помилки та поведінка користувачів, щоб забезпечити стабільність продукту та швидке реагування на проблеми.<br><br>
         <span class="sec-color">Моніторингові метрики:</span> <br> • Технічні (наприклад, uptime Firebase, помилки в Crashlytics).<br> • Користувацькі (наприклад, кількість встановлень, Retention Rate, Monetization & Metrics → KPIs).<br><br>
@@ -1128,7 +1128,7 @@
 </template>
 
 
-<!-- <div v-if="selectedItem2 === 'qwerty'" class="content">
+<!-- <div v-if="selectedItem2 === 'qwerty'" class="content font-monospace">
   <span class="five-color">qwerty</span><br />
   Мета <br><br>
   <span class="sec-color">qwerty</span> <br> • <br> • <br> • <br><br>

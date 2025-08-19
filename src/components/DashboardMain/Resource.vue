@@ -219,6 +219,22 @@
           </ul>
         </div>
       </div>
+      <div class="block-type col-12">
+        <div class="d-flex gap-2 align-items-center sec-color fs-16">
+          <div class="icons-wrapper">
+            <b-icon icon="images" class="icon-style"></b-icon>
+          </div>
+          Media
+        </div>
+        <div>
+          <ul class="neutral-color pt-0">
+            <li class="pl-2 d-block d-md-flex justify-content-between">
+              <router-link to="Media_Stock"
+                >Stock</router-link>
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
   </div>
 </template>
